@@ -52,6 +52,14 @@
   * install vim script fugitive.vim, railstab.vim endwise.vim
     2010/10/26 22:10:17
 
+#### bash script
+
+  * 写一个bash shell脚本库，比如timestamp, tl, sdl这些常用的函数，还有解析
+    参数的那些操作等等
+    2010/10/27 00:13:31
+
+#### others
+
   * 实现一个mytodo命令
 
     无参数时，编辑TODO*文件，编辑结束后，如果TODO文件在git repo中，则自动
