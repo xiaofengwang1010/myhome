@@ -19,6 +19,7 @@
     glog = log --graph --oneline --abbrev-commit --decorate --pretty='%h %ci %Cgreen%s%Creset <%aN>'
     l = log --graph --oneline --abbrev-commit --decorate
     unstage = reset HEAD --
+	last = log -1 HEAD
 [color]
     branch = auto
     diff = auto
