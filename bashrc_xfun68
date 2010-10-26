@@ -1,0 +1,100 @@
+#########################################################
+## basic
+#########################################################
+export PATH=$HOME/bin:$PATH
+export PS1="\[\e[32;1m\]\d \t\n\u:\n\w\n\n\$ \[\e[0m\]"
+
+alias hi='history | less +G'
+alias vimrc='vim ~/.vimrc'
+
+# edit my bashrc and(or) reload it
+edit_bashrc()
+{
+    vim "$HOME/.bashrc_xfun68"
+    return $?
+}
+
+source_bashrc()
+{
+    sys_bashrc_file="$HOME/.bashrc"
+    echo "source $sys_bashrc_file ..."
+    source "$sys_bashrc_file"
+    result=$?
+    echo "done"
+    return $result
+}
+
+mybashrc()
+{
+    case "$1" in
+        "-e" )
+            edit_bashrc
+            ;;
+        "-l" )
+            source_bashrc
+            ;;
+        *    )
+            edit_bashrc
+            source_bashrc
+            ;;
+    esac
+
+    return 0
+}
+
+# tail last file
+tl()
+{
+    tail -n${2:-100} -f `ls ${1:-*} | tail -n1`
+}
+
+#########################################################
+## history
+#########################################################
+export HISTSIZE=10000
+export HISTFILESIZE=20000
+export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+
+#########################################################
+## ssh
+#########################################################
+SSH_ENV="$HOME/.ssh/environment"
+
+function start_agent {
+    echo "Initializing new SSH agent..."
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add;
+}
+
+# Source SSH settings, if applicable
+if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}" > /dev/null
+    #ps ${SSH_AGENT_PID} doesn't work under cywgin
+    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+    start_agent;
+    }
+else
+    start_agent;
+fi
+
+#########################################################
+## ibus
+#########################################################
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+#########################################################
+## SVN
+#########################################################
+export SVN_EDITOR=$HOME/bin/vim
+
+#########################################################
+## rvm, should be always at the end of this file
+#########################################################
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+[[ -r $rvm_path/scripts/completion ]] && source "$rvm_path/scripts/completion"
+
