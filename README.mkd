@@ -1,4 +1,4 @@
-## myhome
+# myhome
 
 保存了我本人$HOME下所有自定义了的东西。
 
