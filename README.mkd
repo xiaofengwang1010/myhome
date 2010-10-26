@@ -45,3 +45,16 @@
     2010/10/26 21:26:06
   * 支持自动行为，比如说自动每N分钟从github同步一次 等等
     2010/10/26 21:25:52
+
+#### vim
+  * 让html_autoclosetag.vim具有xml.vim的两次回车自动将关闭标签换行的功能
+    2010/10/26 22:10:14
+  * install vim script fugitive.vim, railstab.vim endwise.vim
+    2010/10/26 22:10:17
+
+  * 实现一个mytodo命令
+
+    无参数时，编辑TODO*文件，编辑结束后，如果TODO文件在git repo中，则自动
+    提交修改。‘mytodo -a'将参数指定的字符串append到TODO文件中。'mytodo -'
+    从终端读取输入并append到TODO文件中。
+    2010/10/26 22:10:27
