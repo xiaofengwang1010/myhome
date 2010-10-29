@@ -103,10 +103,14 @@ export QT_IM_MODULE=ibus
 #########################################################
 ## SVN
 #########################################################
-export SVN_EDITOR=$HOME/bin/vim
+export SVN_EDITOR=vim
 
 alias sll='svn log | less'
-alias svn-url='svn info | grep "URL:\s*svn" | cut -d " " -f 2'
+svnurl()
+{
+    SVNURL=$(svn info | grep "URL:\s*svn" | cut -d " " -f 2)
+    echo $SVNURL
+}
 
 sdl()
 {
