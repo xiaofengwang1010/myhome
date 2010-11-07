@@ -25,3 +25,5 @@ ln_it_to_home "tmux.conf"
 
 ln_it_to_home "vim"
 ln_it_to_home "vimrc"
+
+ln_it_to_home "rvmrc"
