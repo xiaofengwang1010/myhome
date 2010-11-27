@@ -1,6 +1,5 @@
-ORACLE_HOME=/usr/lib/oracle/xe/app/oracle/product/10.2.0/server
-PATH=$PATH:$ORACLE_HOME/bin
-export ORACLE_HOME
-export ORACLE_SID=XE
+oracle_env_file_client="/usr/lib/oracle/xe/app/oracle/product/10.2.0/client/bin/oracle_env.sh"
+[[ -s "$oracle_env_file_client" ]] && source "$oracle_env_file_client"
 
-export PATH
+oracle_env_file_server="/usr/lib/oracle/xe/app/oracle/product/10.2.0/server/bin/oracle_env.sh"
+[[ -s "$oracle_env_file_server" ]] && source "$oracle_env_file_server"
