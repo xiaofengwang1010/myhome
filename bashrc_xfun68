@@ -46,7 +46,11 @@ mybashrc()
 # kill a process using the PID from 'cat xxx.pid'
 kc()
 {
-    kill "$2" `cat ${1:-"cat_not_found_pid_file"}.pid`
+    if [ -n "$2" ] ; then
+        kill "$2" `cat ${1:-"cat_not_found_pid_file"}.pid`
+    else
+        kill `cat ${1:-"cat_not_found_pid_file"}.pid`
+    fi
 }
 
 # tail last file
