@@ -357,6 +357,10 @@ function! JavaScriptFold()
     setl foldtext=FoldText()
 endfunction
 
+""""""""""""""""""""""""""""""
+" => C/C++ Section
+""""""""""""""""""""""""""""""
+autocmd FileType c,cpp set shiftwidth=4 | set expandtab | set tabstop=4
 
 """"""""""""""""""""""""""""""
 " => Fuzzy finder

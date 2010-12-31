@@ -1,0 +1,7 @@
+oracle_env_file_client="/usr/lib/oracle/xe/app/oracle/product/10.2.0/client/bin/oracle_env.sh"
+[[ -s "$oracle_env_file_client" ]] && source "$oracle_env_file_client"
+
+oracle_env_file_server="/usr/lib/oracle/xe/app/oracle/product/10.2.0/server/bin/oracle_env.sh"
+[[ -s "$oracle_env_file_server" ]] && source "$oracle_env_file_server"
+
+export LD_LIBRARY_PATH="$HOME/.uos_third_party/occi_10_2/lib/"

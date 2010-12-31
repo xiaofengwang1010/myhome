@@ -100,6 +100,11 @@ if [[ -n "$PS1" ]] ; then
 fi
 
 # load my bashrc file
+
+if [ -f ~/.bashrc_oracle ]; then
+    . ~/.bashrc_oracle
+fi
+
 if [ -f ~/.bashrc_xfun68 ]; then
     . ~/.bashrc_xfun68
 fi
