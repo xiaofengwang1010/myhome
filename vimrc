@@ -391,11 +391,17 @@ map <leader><leader><leader> :e ~/buffer<cr>
 " remove ^M from EOL
 "nnoremap <C-M> <Esc>:%s:::<CR>
 
-noremap <leader>t :wa<CR>
-    \:make<CR>
-    \:!./test<CR>
+function! BuildAndRunTest()
+  wa
+  !rm -rf ./bin
+  !rm -f ./test
+  make
+  !./test
+endfunction
 
-command! T :wa | make | !./test
+noremap <leader>t :call BuildAndRunTest()
+
+command! T :call BuildAndRunTest()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ruby
