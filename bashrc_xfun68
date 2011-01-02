@@ -56,7 +56,7 @@ kc()
 # tail last file
 tl()
 {
-    tail -n${2:-100} -f `ls ${1:-*} | tail -n1`
+    tail -n${2:-100} -f `ls ${1:-*}* | tail -n1`
 }
 
 # edit README file and convert it to html and show it in google-chrome
