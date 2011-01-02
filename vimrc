@@ -319,6 +319,11 @@ autocmd BufRead,BufNew :call UMiniBufExplorer
 map <leader>u :TMiniBufExplorer<cr>:TMiniBufExplorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => C/Cpp tab
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType c,cpp set sw=2 ts=2
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omni complete functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
@@ -385,6 +390,18 @@ map <leader><leader><leader> :e ~/buffer<cr>
 
 " remove ^M from EOL
 "nnoremap <C-M> <Esc>:%s:::<CR>
+
+function! BuildAndRunTest()
+  wa
+  !rm -rf ./bin
+  !rm -f ./test
+  make
+  !./test
+endfunction
+
+noremap <leader>t :call BuildAndRunTest()
+
+command! T :call BuildAndRunTest()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ruby
