@@ -3,6 +3,8 @@
 #########################################################
 export PATH=$HOME/bin:$PATH
 export PS1="\[\e[32;1m\]\d \t\n\u:\n\w\n\n\$ \[\e[0m\]"
+export EDITOR=vi
+export VISUAL=vi
 
 alias hi='history | less +G'
 alias vimrc='vim ~/.vimrc'
