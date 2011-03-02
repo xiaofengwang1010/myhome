@@ -172,6 +172,20 @@ fdp2svg()
     filename=$1; vi "$filename"; fdp -Tsvg "$filename" -O && eog "$filename.svg"
 }
 
+daka()
+{
+    if (($# != 2)); then
+        echo "Usage: $0 <passport> <password>";
+        return 1;
+    fi
+    passport=${1};
+    password=${2};
+    ssh 89 "curl 'http://192.168.41.191/apl/login/Login.wa?do=login' -d '_environment=&passport=${passport}&password=${password}&login_type=N'"
+    retcode=$?;
+    echo "RetCode is '$retcode'";
+    return $retcode;
+}
+
 #########################################################
 ## rvm, should be always at the end of this file
 #########################################################
