@@ -67,6 +67,53 @@ readme()
     vi README ; markdown README > README.html && google-chrome README.html
 }
 
+daka()
+{
+    if (($# != 2)); then
+        echo "Usage: $0 <passport> <password>";
+        return 1;
+    fi
+    passport=${1};
+    password=${2};
+    ssh 89 "curl 'http://192.168.41.191/apl/login/Login.wa?do=login' -d '_environment=&passport=${passport}&password=${password}&login_type=N'"
+    retcode=$?;
+    echo "RetCode is '$retcode'";
+    return $retcode;
+}
+
+cgrep()
+{
+    GREP_COLOR="1;3$((RANDOM%6+1))" grep --color=always "$@"
+}
+
+d2b()
+{
+    echo "obase=2; ibase=10; `echo $@ | tr a-z A-Z`" | bc
+}
+d2o()
+{
+    echo "obase=8; ibase=10; `echo $@ | tr a-z A-Z`" | bc
+}
+d2h()
+{
+    echo "obase=16; ibase=10; `echo $@ | tr a-z A-Z`" | bc
+}
+
+b2d()
+{
+    echo "obase=10; ibase=2; `echo $@ | tr a-z A-Z`" | bc
+}
+
+o2d()
+{
+    echo "obase=10; ibase=8; `echo $@ | tr a-z A-Z`" | bc
+}
+
+h2d()
+{
+    echo "obase=10; ibase=16; `echo $@ | tr a-z A-Z`" | bc
+}
+
 #########################################################
 ## history
 #########################################################
@@ -170,20 +217,6 @@ fdp2svg()
     fi
 
     filename=$1; vi "$filename"; fdp -Tsvg "$filename" -O && eog "$filename.svg"
-}
-
-daka()
-{
-    if (($# != 2)); then
-        echo "Usage: $0 <passport> <password>";
-        return 1;
-    fi
-    passport=${1};
-    password=${2};
-    ssh 89 "curl 'http://192.168.41.191/apl/login/Login.wa?do=login' -d '_environment=&passport=${passport}&password=${password}&login_type=N'"
-    retcode=$?;
-    echo "RetCode is '$retcode'";
-    return $retcode;
 }
 
 #########################################################
