@@ -83,6 +83,16 @@ daka()
     return $retcode;
 }
 
+random_num_between()
+{
+    min=${1:-0}
+    max=${2:-100}
+    diff=$max-$min+1
+    random_num=$(date +%s%N)
+    ((retnum=random_num%diff+min))
+    echo $retnum
+}
+
 cgrep()
 {
     GREP_COLOR="1;3$((RANDOM%6+1))" grep --color=always "$@"
