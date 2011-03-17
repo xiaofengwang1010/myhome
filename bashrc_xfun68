@@ -77,7 +77,9 @@ daka()
     password=${2};
     ssh 89 "curl 'http://192.168.41.191/apl/login/Login.wa?do=login' -d '_environment=&passport=${passport}&password=${password}&login_type=N'"
     retcode=$?;
-    echo "RetCode is '$retcode'";
+    date >> ~/.daka-robot.log
+    echo "Daka for $passport/$password, result is '$retcode'." >> ~/.daka-robot.log
+    echo "" >> ~/.daka-robot.log
     return $retcode;
 }
 
