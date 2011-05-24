@@ -8,7 +8,7 @@ ln_it_to_home()
 
     target_name="$1"
 
-    ln -s -n -v `pwd -P`/"$target_name" $HOME/."$target_name"
+    ln -sf -n -v `pwd -P`/"$target_name" $HOME/."$target_name"
 
     return $?
 }
