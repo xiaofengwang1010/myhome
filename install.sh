@@ -22,6 +22,7 @@ ln_it_to_home "bashrc_oracle"
 ln_it_to_home "bashrc_xfun68"
 
 ln_it_to_home "gitconfig"
+ln_it_to_home "git-completion.bash"
 
 ln_it_to_home "tmux.conf"
 

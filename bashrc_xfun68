@@ -78,13 +78,9 @@ Bash_On_IWhite='\[\e[0;107m\]'   # White
 
 BASH_NEWLINE="\n"
 
-function parse_git_branch
-{
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
-    echo "("${ref#refs/heads/}")";
-}
+[ -f ~/.git-bash-completion.sh ] && . ~/.git-bash-completion.sh
 
-export PS1="${BASH_NEWLINE}${Bash_BIGreen}\d \t${BASH_NEWLINE}\u@\h${BASH_NEWLINE}\w${BASH_NEWLINE}${Bash_Yellow}\$(parse_git_branch)${BASH_NEWLINE}${Bash_BIGreen}\$ ${Bash_Color_Off}"
+export PS1="${BASH_NEWLINE}${Bash_BIGreen}\d \t${BASH_NEWLINE}\u@\h${BASH_NEWLINE}\w${BASH_NEWLINE}${Bash_Yellow}$(__git_ps1 " (%s)")${BASH_NEWLINE}${Bash_BIGreen}\$ ${Bash_Color_Off}"
 
 export EDITOR=vi
 export VISUAL=vi
