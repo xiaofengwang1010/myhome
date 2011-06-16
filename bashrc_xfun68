@@ -80,7 +80,7 @@ BASH_NEWLINE="\n"
 
 [ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
 
-export PS1='\n\[\e[1;92m\]\d \t \u@\h\n\w\n\[\e[0;33m\]$(__git_ps1)\n\[\e[1;92m\]\$\[\e[0m\] '
+export PS1='\n\[\e[0;92m\]\d \t \u@\h\n\w\n\[\e[0;33m\]$(__git_ps1)\n\[\e[0;92m\]\$\[\e[0m\] '
 
 export EDITOR=vi
 export VISUAL=vi
