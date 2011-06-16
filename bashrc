@@ -78,9 +78,10 @@ if [[ -n "$PS1" ]] ; then
     fi
 
     # some more ls aliases
-    alias ll='ls -lF'
-    alias la='ls -A'
-    alias l='ls -CF'
+    alias ls='ls -FG'
+    alias ll='ls -lFG'
+    alias la='ls -AFG'
+    alias l='ls -CFG'
 
     # Alias definitions.
     # You may want to put all your additions into a separate file like
