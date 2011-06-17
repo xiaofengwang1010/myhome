@@ -74,12 +74,12 @@ syntax on
 set gfn=Monospace\ 10
 set shell=/bin/bash
 
-if ! has("gui_running") 
-    set t_Co=256 
-endif 
-" feel free to choose :set background=light for a different style 
-set background=dark 
-colors peaksea 
+" if ! has("gui_running")
+"     set t_Co=256
+" endif
+" feel free to choose :set background=light for a different style
+" set background=dark
+" colors peaksea
 
 " show line number
 set nu
@@ -399,9 +399,9 @@ function! BuildAndRunTest()
   !./test
 endfunction
 
-noremap <leader>t :call BuildAndRunTest()
+" noremap <leader>t :call BuildAndRunTest()
 
-command! T :call BuildAndRunTest()
+" command! T :call BuildAndRunTest()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ruby
