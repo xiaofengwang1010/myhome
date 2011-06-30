@@ -88,6 +88,11 @@ export VISUAL=vi
 alias hi='history | less +G'
 alias vimrc='vim ~/.vimrc'
 alias grep='grep -E -a --color=auto'
+alias be='bundle exec'
+alias be_rs='bundle exec rails server'
+alias be_rc='bundle exec rails console'
+alias brails='bundle exec rails'
+alias brake='bundle exec rake'
 
 # edit my bashrc and(or) reload it
 edit_bashrc()
