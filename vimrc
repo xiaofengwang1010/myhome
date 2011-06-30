@@ -419,3 +419,8 @@ let g:rails_default_file='config/database.yml'
 
 " Add recently accessed rails projects to menu (project plugin)
 set viminfo^=!
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd VimEnter *  NERDTree
