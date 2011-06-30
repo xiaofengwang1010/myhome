@@ -424,3 +424,10 @@ set viminfo^=!
 " NERDTree.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd VimEnter *  NERDTree
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" neocomplcache.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:neocomplcache_enable_at_startup = 1
+" let g:neocomplcache_disable_auto_complete = 1
+" let g:SuperTabDefaultCompletionType="context"
