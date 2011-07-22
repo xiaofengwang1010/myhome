@@ -74,6 +74,8 @@ syntax on
 set gfn=Monospace\ 10
 set shell=/bin/bash
 
+set t_Co=256
+
 " if ! has("gui_running")
 "     set t_Co=256
 " endif
@@ -284,8 +286,8 @@ map 0 ^
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Do :help cope if you are unsure what cope is. It's super useful!
 map <leader>cc :botright cope<cr>
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
+" map <leader>n :cn<cr>
+" map <leader>p :cp<cr>
 
 """"""""""""""""""""""""""""""
 " => script settings
@@ -383,7 +385,7 @@ set grepprg=/bin/grep\ -nH
 " => MISC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+" noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "Quickly open a buffer for scripbble
 map <leader><leader><leader> :e ~/buffer<cr>
@@ -423,7 +425,7 @@ set viminfo^=!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd VimEnter *  NERDTree
+" autocmd VimEnter *  NERDTree
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " neocomplcache.vim
