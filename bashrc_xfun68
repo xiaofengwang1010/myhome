@@ -1,7 +1,8 @@
 #########################################################
 ## basic
 #########################################################
-export PATH=$HOME/bin:$HOME/opt/radrails/:$HOME/opt/nginx/sbin/:$PATH
+export PATH=$HOME/bin:/usr/local/mysql/bin:/usr/local/bin:$HOME/opt/radrails/:$HOME/opt/nginx/sbin/:$PATH
+export LS_COLORS='di=01;33'
 
 # Reset
 Bash_Color_Off='\[\e[0m\]'       # Text Reset
@@ -84,15 +85,6 @@ export PS1='\n\[\e[0;92m\]\d \t \u@\h\n\w\n\[\e[0;33m\]$(__git_ps1)\n\[\e[0;92m\
 
 export EDITOR=vi
 export VISUAL=vi
-
-alias hi='history | less +G'
-alias vimrc='vim ~/.vimrc'
-alias grep='grep -E -a --color=auto'
-alias be='bundle exec'
-alias be_rs='bundle exec rails server'
-alias be_rc='bundle exec rails console'
-alias brails='bundle exec rails'
-alias brake='bundle exec rake'
 
 # edit my bashrc and(or) reload it
 edit_bashrc()
@@ -254,7 +246,6 @@ export QT_IM_MODULE=ibus
 #########################################################
 export SVN_EDITOR=vim
 
-alias sll='svn log | less'
 svnurl()
 {
     SVNURL=$(svn info | grep "URL:\s*svn" | cut -d " " -f 2)

@@ -77,12 +77,6 @@ if [[ -n "$PS1" ]] ; then
         alias egrep='egrep --color=auto'
     fi
 
-    # some more ls aliases
-    alias ls='ls -FG'
-    alias ll='ls -lFG'
-    alias la='ls -AFG'
-    alias l='ls -CFG'
-
     # Alias definitions.
     # You may want to put all your additions into a separate file like
     # ~/.bash_aliases, instead of adding them here directly.
