@@ -1,28 +1,29 @@
 [user]
-    name = xfun68
-    email = xfun68@gmail.com
+  name = xfun68
+  email = xfun68@gmail.com
 [github]
-    user = xfun68
-    token = 32cdfd74703f29e79a265479a5dc35c1
+  user = xfun68
+  token = 32cdfd74703f29e79a265479a5dc35c1
 [core]
-    autocrlf = input
-    editor = vim
+  autocrlf = input
+  pager = less -FRSX
+  editor = /usr/bin/vim
 [merge]
-    tool = vimdiff
+  tool = vimdiff
 [alias]
-    st = status -sb
-    ci = commit
-    co = checkout
-    br = branch
-    oneline = log --pretty=oneline --since='2 days ago' --abbrev-commit
-    onelog = log -p -1 --abbrev-commit
-    glog = log --graph --oneline --abbrev-commit --decorate --pretty='%Cblue%h%Creset %cr %Cgreen%s%Creset <%aN>'
-    l = log --graph --oneline --abbrev-commit --decorate
-    unstage = reset HEAD --
-    last = log -1 HEAD
+  st = status -sb
+  ci = commit
+  co = checkout
+  br = branch
+  oneline = log --pretty=oneline --since='2 days ago' --abbrev-commit
+  onelog = log -p -1 --abbrev-commit
+  glog = log --graph --oneline --abbrev-commit --decorate --pretty='%Cblue%h%Creset %cr %Cgreen%s%Creset <%aN>'
+  l = log --graph --oneline --abbrev-commit --decorate
+  unstage = reset HEAD --
+  last = log -1 HEAD
 [color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
-    ui = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
