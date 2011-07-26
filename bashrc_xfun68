@@ -83,8 +83,10 @@ BASH_NEWLINE="\n"
 
 export PS1='\n\[\e[0;92m\]\d \t \u@\h\n\w\n\[\e[0;33m\]$(__git_ps1)\n\[\e[0;92m\]\$\[\e[0m\] '
 
-export EDITOR=vi
-export VISUAL=vi
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
+
+function cdl { cd ${1-HOME}; ls -lFG;}
 
 # edit my bashrc and(or) reload it
 edit_bashrc()
@@ -305,6 +307,11 @@ fdp2svg()
 
     filename=$1; vi "$filename"; fdp -Tsvg "$filename" -O && eog "$filename.svg"
 }
+
+#########################################################
+## Ruby
+#########################################################
+export RUBYOPT=rubygems
 
 #########################################################
 ## rvm, should be always at the end of this file
