@@ -76,6 +76,13 @@ set shell=/bin/bash
 
 set t_Co=256
 
+if has("autocmd")
+  autocmd BufReadPost *
+        \ if line("'\"") > 1 && line("'\"") <= line("$") |
+        \   exe "normal! g`\"" |
+        \ endif
+endif
+
 " if ! has("gui_running")
 "     set t_Co=256
 " endif
