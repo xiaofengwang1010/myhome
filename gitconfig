@@ -15,10 +15,12 @@
   ci = commit
   co = checkout
   br = branch
+  di = diff
+  dif = diff
   oneline = log --pretty=oneline --since='2 days ago' --abbrev-commit
   onelog = log -p -1 --abbrev-commit
-  glog = log --graph --oneline --abbrev-commit --decorate --pretty='%Cblue%h%Creset %cr %Cgreen%s%Creset <%aN>'
-  l = log --graph --oneline --abbrev-commit --decorate
+  l    = log --graph --oneline --abbrev-commit --decorate --all
+  glog = log --graph --oneline --abbrev-commit --decorate --all --pretty='%Cgreen%h%Creset %Cred%cr%Creset %s %Cgreen<%aN>%Creset'
   unstage = reset HEAD --
   last = log -1 HEAD
 [color]
@@ -27,3 +29,9 @@
   interactive = auto
   status = auto
   ui = auto
+[submodule "cucumber/shared_pages"]
+  ignore = dirty
+[submodule "cucumber/shared_steps"]
+  ignore = dirty
+[submodule "gremlin"]
+  ignore = dirty
