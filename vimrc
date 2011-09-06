@@ -131,7 +131,7 @@ set tw=500
 
 set autoindent "Auto indent
 set si "Smart indet
-set wrap "Wrap lines
+set nowrap
 
 map <leader>t2 :setlocal shiftwidth=2<cr>
 map <leader>t4 :setlocal shiftwidth=4<cr>
