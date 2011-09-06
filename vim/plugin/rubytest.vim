@@ -1,5 +1,5 @@
 " Vim plugin for running ruby tests
-" Last Change: May 13 2009
+" Last Change: Jun 17 2011
 " Maintainer: Jan <jan.h.xie@gmail.com>
 " License: MIT License
 
@@ -21,16 +21,16 @@ if !exists("g:rubytest_cmd_testcase")
   let g:rubytest_cmd_testcase = "ruby %p -n '/%c/'"
 endif
 if !exists("g:rubytest_cmd_spec")
-  let g:rubytest_cmd_spec = "spec -f specdoc %p"
+  let g:rubytest_cmd_spec = "bundle exec rspec %p"
 endif
 if !exists("g:rubytest_cmd_example")
-  let g:rubytest_cmd_example = "spec -f specdoc %p -l %c"
+  let g:rubytest_cmd_example = "bundle exec rspec %p -l %c"
 endif
 if !exists("g:rubytest_cmd_feature")
-  let g:rubytest_cmd_feature = "cucumber %p"
+  let g:rubytest_cmd_feature = "bundle exec cucumber %p"
 endif
 if !exists("g:rubytest_cmd_story")
-  let g:rubytest_cmd_story = "cucumber %p -n '%c'"
+  let g:rubytest_cmd_story = "bundle exec cucumber %p -n '%c'"
 endif
 
 function s:FindCase(patterns)
