@@ -79,9 +79,9 @@ Bash_On_IWhite='\[\e[0;107m\]'   # White
 
 BASH_NEWLINE="\n"
 
-[ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
+[ -f ~/.bashrc_git ] && . ~/.bashrc_git
 
-export PS1='\n\[\e[0;92m\]\d \t \u@\h\n\w\n\[\e[0;33m\]$(__git_ps1)\n\[\e[0;92m\]\$\[\e[0m\] '
+export PS1='\n\[\e[0;92m\]\d \t \u\n\w\n\[\e[0;33m\]$(__git_ps1)\n\[\e[0;92m\]\$\[\e[0m\] '
 
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
@@ -208,9 +208,12 @@ h2d()
 #########################################################
 ## history
 #########################################################
-export HISTSIZE=10000
-export HISTFILESIZE=20000
-export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+[[ -s "$HOME/.bashrc_history" ]] && source "$HOME/.bashrc_history"
+
+top-ten()
+{
+  history | awk '{CMD[$4]++;count++;} END { for(a in CMD) {print CMD[a] " " CMD[a]/count*100 "% " a}}' | grep -v "./" | column -c3 -s ' ' -t | sort -nr | nl |  head -n ${1:-10}
+}
 
 #########################################################
 ## ssh

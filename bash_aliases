@@ -20,7 +20,6 @@ alias rea='cd ~/code/rea'
 alias mock_ds='mockds'
 alias rea-api='cd ~/code/rea/rea-api'
 alias syndication-rest-api='cd ~/code/rea/syndication-rest-api'
-alias api='syndication-rest-api'
 alias qa='cd ~/code/rea/qa/'
 alias e2e_rea_api='cd ~/code/rea/qa/e2e_rea_api'
 alias e2e='e2e_rea_api'
@@ -44,3 +43,5 @@ alias sll='svn log | less'
 
 alias reset-cisco='sudo SystemStarter restart CiscoVPN'
 alias restart-cisco='reset-cisco'
+
+alias spec='be spec --format nested --color '
