@@ -15,6 +15,7 @@ alias up5='cd ../../../../..'
 alias up6='cd ../../../../../..'
 
 # shortcuts for entering specific project dir
+alias tmp='cd ~/tmp/'
 alias code='cd ~/code'
 alias rea='cd ~/code/rea'
 alias mock_ds='mockds'
