@@ -35,6 +35,7 @@ alias vimrc='vim ~/.vimrc'
 
 alias grep='grep -P -a --color=auto'
 alias be='bundle exec'
+alias cuke='be cucumber '
 alias be_rs='bundle exec rails server'
 alias be_rc='bundle exec rails console'
 alias brails='bundle exec rails'
