@@ -1,7 +1,7 @@
 #########################################################
 ## basic
 #########################################################
-export PATH=$HOME/bin:/usr/local/mysql/bin:/usr/local/bin:$HOME/opt/radrails/:$HOME/opt/nginx/sbin/:$PATH
+export PATH=$HOME/bin:/usr/local/git/bin/:/usr/local/mysql/bin:/usr/local/bin:$HOME/opt/radrails/:$HOME/opt/nginx/sbin/:$PATH
 export LS_COLORS='di=01;33'
 
 # Reset
@@ -316,6 +316,13 @@ fdp2svg()
 ## Ruby
 #########################################################
 export RUBYOPT=rubygems
+
+rvmrc()
+{
+  echo 'rvm_install_on_use_flag=1' > .rvmrc
+  echo "rvm --create use ree-1.8.7-2011.03@`basename $(pwd)`" >> .rvmrc
+  cat .rvmrc 1>&2
+}
 
 #########################################################
 ## rvm, should be always at the end of this file
