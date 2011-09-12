@@ -13,4 +13,12 @@ alias grr='git remote rm'
 alias gpu='git pull'
 alias gcl='git clone'
 
+first-commit()
+{
+  git init
+  git add .
+  git commit -m 'First commit'
+  git log --oneline -1
+}
+
 [ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
