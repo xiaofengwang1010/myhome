@@ -320,8 +320,58 @@ export RUBYOPT=rubygems
 rvmrc()
 {
   echo 'rvm_install_on_use_flag=1' > .rvmrc
-  echo "rvm --create use ree-1.8.7-2011.03@`basename $(pwd)`" >> .rvmrc
+  echo "rvm --create use ree-1.8.7-2011.03@${1:-`basename $(pwd)`}" >> .rvmrc
   cat .rvmrc 1>&2
+}
+
+gemfile()
+{
+  echo 'source :rubygems' > Gemfile
+  echo >> Gemfile
+  cat 1>&2 <<-EOF
+Hints:
+  -= Gem Sources =-
+  source :rubygems
+  source "http://rubygems.org"
+  source :rubyforge
+  source "http://gems.rubyforge.org"
+  source :gemcutter
+  source "http://gemcutter.org"
+
+  -= Version Specifiers =-
+  gem "nokogiri"
+  gem "rails", "3.0.0.beta3"
+  gem "rack",  ">=1.0"
+  gem "thin",  "~>1.1"
+  gem "chef",  "~> 2.2.beta"
+
+  -= Bundler.require =-
+  gem "rspec", :require => "spec"
+  gem "sqlite3-ruby", "1.2.5", :require => "sqlite3"
+
+  -= Git Repo =-
+  gem "nokogiri", :git => "git://github.com/tenderlove/nokogiri.git", :branch => "1.4"
+
+  git "git://github.com/wycats/thor.git", :tag => "v0.13.4"
+  gem "thor"
+
+  -= Local Path =-
+  gem "nokogiri", :path => "~/sw/gems/nokogiri"
+
+  -= Groups =-
+  gem "wirble", :group => :development
+  gem "ruby-debug", :group => [:development, :test]
+
+  group :test do
+    gem "rspec"
+  end
+
+Now waiting for your input...
+--------------------------------------------------------------------------------
+EOF
+  cat >> Gemfile
+  echo "--------------------------------------------------------------------------------" 1>&2
+  cat Gemfile 1>&2
 }
 
 #########################################################
