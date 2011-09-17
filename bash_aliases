@@ -1,11 +1,9 @@
-# some more ls aliases
 alias ls='ls -FG'
 alias ll='ls -lFG'
 alias la='ls -AFG'
 alias l='ls -lFG'
 
-# some more rm aliases
-alias rm='rm -i'
+alias rm='rm -i' # DON'T USE rm -rf ALWAYS, BE CAREFUL
 
 alias up='cd ..'
 alias up2='cd ../..'
@@ -13,6 +11,10 @@ alias up3='cd ../../..'
 alias up4='cd ../../../..'
 alias up5='cd ../../../../..'
 alias up6='cd ../../../../../..'
+alias up7='cd ../../../../../../..'
+alias up8='cd ../../../../../../../..'
+alias up9='cd ../../../../../../../../..'
+alias recd='cd .. && cd -'
 
 # shortcuts for entering specific project dir
 alias tmp='cd ~/tmp/'

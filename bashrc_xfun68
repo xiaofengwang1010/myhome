@@ -87,7 +87,7 @@ export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 export SHOWOFF_EVAL_RUBY=1
 
-function cdl { cd ${1-HOME}; ls -lFG;}
+function cdl { cd ${1-$HOME}; ls -lFG;}
 
 # edit my bashrc and(or) reload it
 edit_bashrc()
@@ -372,6 +372,11 @@ EOF
   cat >> Gemfile
   echo "--------------------------------------------------------------------------------" 1>&2
   cat Gemfile 1>&2
+}
+
+abs()
+{
+  open 'http://tldp.org/LDP/abs/html/'
 }
 
 #########################################################
