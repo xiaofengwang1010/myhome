@@ -96,7 +96,7 @@ set nu
 " encoding settings
 set encoding=utf-8
 set fenc=utf-8
-set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936,big5,euc-jp,euc-kr,latin1
 
 " use english for default help language
 set helplang=cn
@@ -117,6 +117,7 @@ set backup
 set nowb
 set backupdir=~/.tmp_files/vim/backups
 set directory=~/.tmp_files/vim/tmp
+set backupskip=/tmp/*,/private/tmp/*"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
