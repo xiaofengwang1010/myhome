@@ -1,5 +1,7 @@
 #!/bin/shell
 
+mkdir -p ~/.tmp_files/vim/{backups,tmp}
+
 ln_it_to_home()
 {
     if [ -z "$1" ]; then

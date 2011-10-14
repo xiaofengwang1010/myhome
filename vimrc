@@ -111,8 +111,6 @@ set ffs=unix,dos,mac "Default file types
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files and backups
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" $ mkdir ~/.tmp_files/vim/backups -p
-" $ mkdir ~/.tmp_files/vim/tmp -p
 set backup
 set nowb
 set backupdir=~/.tmp_files/vim/backups
