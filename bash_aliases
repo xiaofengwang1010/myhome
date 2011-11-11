@@ -19,6 +19,7 @@ alias recd='cd .. && cd -'
 # shortcuts for entering specific project dir
 alias tmp='cd ~/tmp/'
 alias code='cd ~/code'
+alias codejam='cd ~/code/codejam'
 alias rea='cd ~/code/rea'
 alias mock_ds='mockds'
 alias rea-api='cd ~/code/rea/rea-api'

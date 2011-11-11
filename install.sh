@@ -10,6 +10,8 @@ ln_it_to_home()
 
     target_name="$1"
 
+    cp -rf "$HOME/.${target_name}" "$HOME/.${target_name}.backup"
+
     ln -sf -n -v `pwd -P`/"$target_name" $HOME/."$target_name"
 
     return $?
