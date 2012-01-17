@@ -344,7 +344,8 @@ au FileType html,cheetah set ft=xml
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
-au FileType javascript call JavaScriptFold()
+au FileType javascript set shiftwidth=4 | set expandtab | set tabstop=4
+" au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 
