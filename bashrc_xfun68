@@ -1,7 +1,7 @@
 #########################################################
 ## basic
 #########################################################
-export PATH=$HOME/bin:/usr/local/git/bin/:/usr/local/mysql/bin:/usr/local/bin:$HOME/opt/radrails/:$HOME/opt/nginx/sbin/:$PATH
+export PATH=$HOME/bin:/usr/local/git/bin/:/usr/local/mysql/bin:/usr/local/bin:$HOME/opt/radrails/:$HOME/opt/nginx/sbin/:$HOME/opt/eclipse/:$PATH
 export LS_COLORS='di=01;33'
 
 # Reset
