@@ -374,6 +374,11 @@ function! JavaScriptFold()
 endfunction
 
 """"""""""""""""""""""""""""""
+" => CSS Section
+""""""""""""""""""""""""""""""
+"nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
+
+""""""""""""""""""""""""""""""
 " => C/C++ Section
 """"""""""""""""""""""""""""""
 autocmd FileType c,cpp set shiftwidth=4 | set expandtab | set tabstop=4
