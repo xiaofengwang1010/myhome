@@ -178,8 +178,8 @@ endfunction
 " => Moving around, tabs and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map space to / (search) and c-space to ? (backgwards search)
-map <space> /
-map <c-space> ?
+"map <space> /
+"map <c-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move btw. windows
