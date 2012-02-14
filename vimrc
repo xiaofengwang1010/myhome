@@ -83,12 +83,14 @@ if has("autocmd")
         \ endif
 endif
 
-" if ! has("gui_running")
-"     set t_Co=256
-" endif
-" feel free to choose :set background=light for a different style
-" set background=dark
-" colors peaksea
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
+
+colorscheme solarized
+
 
 " show line number
 set nu
