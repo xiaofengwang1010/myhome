@@ -334,6 +334,11 @@ autocmd BufRead,BufNew :call UMiniBufExplorer
 map <leader>u :TMiniBufExplorer<cr>:TMiniBufExplorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Tagbar Section
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <F4> :TagbarToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => C/Cpp tab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType c,cpp set sw=2 ts=2
