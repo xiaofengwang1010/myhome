@@ -147,6 +147,8 @@ if !exists('loaded_taglist')
     elseif Tlist_WinWidth == 'auto'
         let Tlist_WinWidth = 30
         let s:auto_width = 1
+    else
+        let s:auto_width = 0
     endif
 
     " Horizontally split taglist window height setting
