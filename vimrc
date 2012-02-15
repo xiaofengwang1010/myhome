@@ -334,9 +334,11 @@ autocmd BufRead,BufNew :call UMiniBufExplorer
 map <leader>u :TMiniBufExplorer<cr>:TMiniBufExplorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Tagbar Section
+" => Taglist Section
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <F4> :TagbarToggle<CR>
+nmap <F4> :TlistToggle<CR>
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 60
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => C/Cpp tab
