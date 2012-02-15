@@ -314,6 +314,7 @@ let g:ragtag_global_maps = 1
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
+map <leader>o :BufExplorer<cr>
 
 """"""""""""""""""""""""""""""
 " => Minibuffer plugin
