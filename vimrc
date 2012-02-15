@@ -325,14 +325,14 @@ let g:miniBufExplModSelTarget = 0
 let g:miniBufExplUseSingleClick = 1
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplVSplit = 25
-let g:miniBufExplSplitBelow=1
+"let g:miniBufExplVSplit = 25
+"let g:miniBufExplSplitBelow=1
 
 let g:bufExplorerSortBy = "name"
 
 autocmd BufRead,BufNew :call UMiniBufExplorer
 
-map <leader>u :TMiniBufExplorer<cr>
+map <leader>u :TMiniBufExplorer<cr>:TMiniBufExplorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Taglist Section
