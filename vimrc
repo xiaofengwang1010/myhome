@@ -94,7 +94,7 @@ else
   set background=dark
 endif
 
-colorscheme solarized
+colorscheme peaksea
 
 
 " show line number
