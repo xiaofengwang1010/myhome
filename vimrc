@@ -257,11 +257,10 @@ endtry
 set laststatus=2
 
 " Format the statusline
-set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c
-
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 function! CurDir()
-    let curdir = substitute(getcwd(), '/Users/amir/', "~/", "g")
+    let curdir = substitute(getcwd(), '/Users/twer/', "~/", "g")
     return curdir
 endfunction
 
