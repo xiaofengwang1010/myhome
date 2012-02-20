@@ -333,6 +333,11 @@ autocmd BufRead,BufNew :call UMiniBufExplorer
 
 map <leader>u :TMiniBufExplorer<cr>:TMiniBufExplorer<cr>
 
+""""""""""""""""""""""""""""""
+" => GUndo plugin
+""""""""""""""""""""""""""""""
+nnoremap <F5> :GundoToggle<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Taglist Section
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
