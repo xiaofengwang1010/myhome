@@ -30,6 +30,19 @@ map <leader>rc :e! ~/.vimrc<cr>
 " When vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
+" Bash style key binding in command mode
+cmap <c-a> <home>
+cmap <c-e> <end>
+
+cnoremap <c-b> <left>
+cnoremap <c-d> <del>
+cnoremap <c-f> <right>
+cnoremap <c-n> <down>
+cnoremap <c-p> <up>
+
+cnoremap <esc><c-b> <s-left>
+cnoremap <esc><c-f> <s-right>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
