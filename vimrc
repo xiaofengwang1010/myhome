@@ -100,6 +100,7 @@ if has("autocmd")
         \   exe "normal! g`\"" |
         \ endif
   autocmd BufNewFile,BufRead Rakefile,CapFile,Gemfile,config.ru setfiletype ruby
+  autocmd BufReadPost fugitive://* set bufhidden=delete
 endif
 
 if has('gui_running')
