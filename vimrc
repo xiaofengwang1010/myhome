@@ -99,6 +99,7 @@ if has("autocmd")
         \ if line("'\"") > 1 && line("'\"") <= line("$") |
         \   exe "normal! g`\"" |
         \ endif
+  autocmd BufNewFile,BufRead Rakefile,CapFile,Gemfile,config.ru setfiletype ruby
 endif
 
 if has('gui_running')
