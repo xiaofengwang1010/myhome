@@ -43,6 +43,11 @@ cnoremap <c-p> <up>
 cnoremap <esc><c-b> <s-left>
 cnoremap <esc><c-f> <s-right>
 
+" Fold
+set foldmethod=manual
+autocmd BufWinLeave *.* silent mkview
+autocmd BufWinEnter *.* silent loadview
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
