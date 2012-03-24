@@ -384,17 +384,6 @@ au FileType html,cheetah set ft=xml
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
-au FileType javascript set shiftwidth=4 | set expandtab | set tabstop=4
-" au FileType javascript call JavaScriptFold()
-au FileType javascript setl fen
-au FileType javascript setl nocindent
-
-au FileType javascript imap <c-t> AJS.log();<esc>hi
-au FileType javascript imap <c-a> alert();<esc>hi
-
-au FileType javascript inoremap <buffer> $r return
-au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
-
 function! JavaScriptFold()
     setl foldmethod=syntax
     setl foldlevelstart=1
@@ -405,6 +394,17 @@ function! JavaScriptFold()
     endfunction
     setl foldtext=FoldText()
 endfunction
+
+au FileType javascript set shiftwidth=4 | set expandtab | set tabstop=4
+" au FileType javascript call JavaScriptFold()
+au FileType javascript setl fen
+au FileType javascript setl nocindent
+
+au FileType javascript imap <c-t> AJS.log();<esc>hi
+au FileType javascript imap <c-a> alert();<esc>hi
+
+au FileType javascript inoremap <buffer> $r return
+au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
 
 """"""""""""""""""""""""""""""
 " => CSS Section
