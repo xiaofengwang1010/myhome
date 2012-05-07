@@ -1,3 +1,5 @@
+alias iba='cd ~/code/iba/'
+
 alias ls='ls -FG'
 alias ll='ls -lFG'
 alias la='ls -AFG'
