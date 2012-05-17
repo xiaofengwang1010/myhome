@@ -21,16 +21,16 @@ if !exists("g:rubytest_cmd_testcase")
   let g:rubytest_cmd_testcase = "ruby %p -n '/%c/'"
 endif
 if !exists("g:rubytest_cmd_spec")
-  let g:rubytest_cmd_spec = "bundle exec rspec %p"
+  let g:rubytest_cmd_spec = "rspec %p"
 endif
 if !exists("g:rubytest_cmd_example")
-  let g:rubytest_cmd_example = "bundle exec rspec %p -l %c"
+  let g:rubytest_cmd_example = "rspec %p -l %c"
 endif
 if !exists("g:rubytest_cmd_feature")
-  let g:rubytest_cmd_feature = "bundle exec cucumber %p"
+  let g:rubytest_cmd_feature = "cucumber %p"
 endif
 if !exists("g:rubytest_cmd_story")
-  let g:rubytest_cmd_story = "bundle exec cucumber %p -n '%c'"
+  let g:rubytest_cmd_story = "cucumber %p -n '%c'"
 endif
 
 function s:FindCase(patterns)
