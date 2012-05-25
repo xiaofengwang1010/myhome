@@ -304,6 +304,24 @@ dot2svg()
     filename=$1; vi "$filename"; dot -Tsvg "$filename" -O && eog "$filename.svg"
 }
 
+dot2png()
+{
+    if [[ -z "$1" ]]; then
+        return 1;
+    fi
+
+    filename=$1; vi "$filename"; dot -Tpng "$filename" -O && open "$filename.png"
+}
+
+neato2png()
+{
+    if [[ -z "$1" ]]; then
+        return 1;
+    fi
+
+    filename=$1; neato -Tpng "$filename" -O
+}
+
 fdp2svg()
 {
     if [[ -z "$1" ]]; then
@@ -322,7 +340,7 @@ export RUBYOPT="-Ku"
 rvmrc()
 {
   echo 'rvm_install_on_use_flag=1' > .rvmrc
-  echo "rvm --create use ree-1.8.7-2011.03@${1:-`basename $(pwd)`}" >> .rvmrc
+  echo "rvm --create use ruby-1.9.3-p194@${1:-`basename $(pwd)`}" >> .rvmrc
   cat .rvmrc 1>&2
 }
 
