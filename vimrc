@@ -215,6 +215,12 @@ map <C-up> <C-W>k
 map <C-left> <C-W>h
 map <C-right> <C-W>l
 
+" Smart way to resize windows
+map - <C-W>-
+map + <C-W>+
+map ( <C-W><
+map ) <C-W>>
+
 " Close the current buffer
 map <leader>bd :Bclose<cr>
 
@@ -338,6 +344,7 @@ map <leader>o :BufExplorer<cr>
 """"""""""""""""""""""""""""""
 " => Minibuffer plugin
 """"""""""""""""""""""""""""""
+map <Leader>mb :TMiniBufExplorer<cr>
 let g:miniBufExplModSelTarget = 1
 let g:miniBufExplorerMoreThanOne = 2
 let g:miniBufExplModSelTarget = 0
