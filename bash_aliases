@@ -6,6 +6,7 @@ alias la='ls -AFG'
 alias l='ls -lFG'
 
 alias rm='rm -i' # DON'T USE rm -rf ALWAYS, BE CAREFUL
+alias rdf='rm -rf'
 
 alias up='cd ..'
 alias up2='cd ../..'
@@ -39,13 +40,22 @@ alias vim='vi'
 alias vimrc='vim ~/.vimrc'
 
 alias grep='grep -P -a --color=auto'
+
+alias k9='kill -9'
+
+alias bi='bundle install'
+alias bl='bundle list'
 alias be='bundle exec'
+alias br='bundle exec rspec'
+alias bs='bundle exec spinach'
+alias bc='bundle exec cucumber'
 alias cuke='be cucumber '
 alias be_rs='bundle exec rails server'
 alias be_rc='bundle exec rails console'
 alias brails='bundle exec rails'
 alias brake='bundle exec rake'
 alias brspec='bundle exec rspec'
+
 alias sll='svn log | less'
 
 alias reset-cisco='sudo SystemStarter restart CiscoVPN'
