@@ -50,11 +50,7 @@ alias br='bundle exec rspec'
 alias bs='bundle exec spinach'
 alias bc='bundle exec cucumber'
 alias cuke='be cucumber '
-alias be_rs='bundle exec rails server'
-alias be_rc='bundle exec rails console'
 alias brails='bundle exec rails'
-alias brake='bundle exec rake'
-alias brspec='bundle exec rspec'
 
 alias sll='svn log | less'
 
