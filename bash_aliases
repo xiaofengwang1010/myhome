@@ -8,6 +8,7 @@ alias l='ls -lFG'
 alias rm='rm -i' # DON'T USE rm -rf ALWAYS, BE CAREFUL
 alias rdf='rm -rf'
 
+alias  d='cd ..'
 alias up='cd ..'
 alias up2='cd ../..'
 alias up3='cd ../../..'
@@ -58,3 +59,6 @@ alias reset-cisco='sudo SystemStarter restart CiscoVPN'
 alias restart-cisco='reset-cisco'
 
 alias spec='be spec --format nested --color '
+
+alias git-manual-page='open http://schacon.github.com/git/git.html'
+alias cheat-git='open http://cheat.errtheblog.com/s/git'
