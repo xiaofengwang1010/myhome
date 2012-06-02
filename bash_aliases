@@ -1,4 +1,4 @@
-alias iba='cd ~/code/iba/'
+alias lol='open ~/.lolcommits'
 
 alias ls='ls -FG'
 alias ll='ls -lFG'
