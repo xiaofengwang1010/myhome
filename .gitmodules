@@ -82,3 +82,6 @@
 [submodule "vim/bundle/vagrantfile.vim"]
 	path = vim/bundle/vagrantfile.vim
 	url = https://github.com/robbevan/Vagrantfile.vim.git
+[submodule "vim/bundle/minibufexpl_xfun68.vim"]
+	path = vim/bundle/minibufexpl_xfun68.vim
+	url = git@github.com:xfun68/minibufexpl.vim.git
