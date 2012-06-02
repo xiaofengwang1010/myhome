@@ -49,3 +49,6 @@
 [submodule "vim/bundle/better-snipmate-snippets"]
 	path = vim/bundle/better-snipmate-snippets
 	url = https://github.com/bartekd/better-snipmate-snippets.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
