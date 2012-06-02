@@ -11,16 +11,30 @@
 [merge]
   tool = vimdiff
 [alias]
+  a  = add -p
   ap = add -p
+  s  = status -sb
   st = status -sb
   ci = commit
   co = checkout
   br = branch
+  d  = diff
   di = diff
-  dif = diff
+  dif= diff
+  ds = diff --stat
+  dc = diff --cached
   oneline = log --pretty=oneline --since='2 days ago' --abbrev-commit
   onelog = log -p -1 --abbrev-commit
   l    = log --graph --oneline --abbrev-commit --decorate --all
+  l1   = log --graph --oneline --abbrev-commit --decorate --all -1
+  l2   = log --graph --oneline --abbrev-commit --decorate --all -2
+  l3   = log --graph --oneline --abbrev-commit --decorate --all -3
+  l4   = log --graph --oneline --abbrev-commit --decorate --all -4
+  l5   = log --graph --oneline --abbrev-commit --decorate --all -5
+  l6   = log --graph --oneline --abbrev-commit --decorate --all -6
+  l7   = log --graph --oneline --abbrev-commit --decorate --all -7
+  l8   = log --graph --oneline --abbrev-commit --decorate --all -8
+  l9   = log --graph --oneline --abbrev-commit --decorate --all -9
   glog = log --graph --oneline --abbrev-commit --decorate --all --pretty='%Cgreen%h%Creset %Cred%cr%Creset %s %Cgreen<%aN>%Creset'
   unstage = reset HEAD --
   last = log -1 HEAD
