@@ -19,3 +19,6 @@
 [submodule "vim/bundle/vim-rubytest"]
 	path = vim/bundle/vim-rubytest
 	url = https://github.com/janx/vim-rubytest.git
+[submodule "vim/bundle/vim-rake"]
+	path = vim/bundle/vim-rake
+	url = https://github.com/tpope/vim-rake.git
