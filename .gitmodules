@@ -7,3 +7,6 @@
 [submodule "vim/bundle/vim-unimpaired"]
 	path = vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "vim/bundle/vim-taglist-plus"]
+	path = vim/bundle/vim-taglist-plus
+	url = https://github.com/int3/vim-taglist-plus.git
