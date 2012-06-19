@@ -3,7 +3,7 @@ alias lol='open ~/.lolcommits'
 alias ls='ls -FG'
 alias ll='ls -lFG'
 alias la='ls -AFG'
-alias l='ls -lFG'
+alias l='ls -hlFG'
 
 alias rm='rm -i' # DON'T USE rm -rf ALWAYS, BE CAREFUL
 alias rdf='rm -rf'
@@ -59,6 +59,10 @@ alias reset-cisco='sudo SystemStarter restart CiscoVPN'
 alias restart-cisco='reset-cisco'
 
 alias spec='be spec --format nested --color '
+
+alias g='git'
+
+alias sqlplus='rlwrap sqlplus'
 
 alias git-manual-page='open http://schacon.github.com/git/git.html'
 alias cheat-git='open http://cheat.errtheblog.com/s/git'
