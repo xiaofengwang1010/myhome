@@ -82,7 +82,7 @@ BASH_NEWLINE="\n"
 
 [ -f ~/.bashrc_git ] && . ~/.bashrc_git
 
-export PS1='\n\[\e[0;92m\]\d \t \u\n\w\n\[\e[0;33m\]$(__git_ps1)\n\[\e[0;92m\]\$\[\e[0m\] '
+export PS1='\n\[\e[0;92m\]\d \t \u\n\w\n\[\e[0;33m\]$(__git_ps1) [$(~/.rvm/bin/rvm-prompt)]\n\[\e[0;92m\]\$\[\e[0m\] '
 
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
@@ -123,6 +123,11 @@ mybashrc()
     esac
 
     return 0
+}
+
+myhome()
+{
+  cd ~/code/myhome
 }
 
 # kill a process using the PID from 'cat xxx.pid'
@@ -342,6 +347,7 @@ rvmrc()
   echo 'rvm_install_on_use_flag=1' > .rvmrc
   echo "rvm --create use ruby-1.9.3-p194@${1:-`basename $(pwd)`}" >> .rvmrc
   cat .rvmrc 1>&2
+  recd
 }
 
 gemfile()
