@@ -23,6 +23,7 @@
   dif= diff
   ds = diff --stat
   dc = diff --cached
+  pr = pull --rebase
   oneline = log --pretty=oneline --since='2 days ago' --abbrev-commit
   onelog = log -p -1 --abbrev-commit
   l    = log --graph --oneline --abbrev-commit --decorate --all
