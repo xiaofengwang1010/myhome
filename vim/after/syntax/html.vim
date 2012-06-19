@@ -16,7 +16,7 @@ syn include @htmlCss syntax/css/css3-marquee.vim
 " syn include @htmlCss syntax/css/css3-mediaqueries.vim
 syn include @htmlCss syntax/css/css3-multicol.vim
 syn include @htmlCss syntax/css/css3-preslev.vim
-syn include @htmlCss syntax/css/css3-pseudo-classes.vim
+" syn include @htmlCss syntax/css/css3-pseudo-classes.vim
 syn include @htmlCss syntax/css/css3-ruby.vim
 syn include @htmlCss syntax/css/css3-text.vim
 syn include @htmlCss syntax/css/css3-transforms.vim
