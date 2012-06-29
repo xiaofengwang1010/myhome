@@ -321,6 +321,7 @@ vnoremap $e <esc>`>a"<esc>`<i"<esc>
 " => General Abbrevs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 iab xdate <c-r>=strftime("%Y/%m/%d %H:%M:%S")<cr>
+iab xpry require 'pry'; binding.pry
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
