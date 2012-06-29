@@ -9,10 +9,13 @@ ln_it_to_home()
     fi
 
     target_name="$1"
+    new_files="$target_name"
+    home_files="$HOME/.${target_name}"
+    backup_name="${home_files}.backup"
 
-    cp -rf "$HOME/.${target_name}" "$HOME/.${target_name}.backup"
+    cp -rf "${home_files}" "${backup_name}"
 
-    ln -sf -n -v `pwd -P`/"$target_name" $HOME/."$target_name"
+    ln -sf -n -v `pwd -P`/"${new_files}" "${home_files}"
 
     return $?
 }
