@@ -1,0 +1,33 @@
+ports() {
+  cat <<-EOF
+  5000 => admin
+  5100 => catalogue
+  5200 => commerce
+  5300 => jobs
+  5400 => orders
+  5500 => profiles
+  5600 => store
+  5700 => callcenter
+  5800 => proxy_fu
+
+  5900 => entitlements
+  5901 => adobe_entitlements
+  5902 => subscriptions
+EOF
+}
+
+rm_cassettes_spec() {
+  rm -rf ./spec/cassettes
+}
+
+rm_cassettes_features() {
+  rm -rf ./features/cassettes
+}
+
+rm_cassettes() {
+  rm_cassettes_spec && rm_cassettes_features
+}
+
+gst() {
+  git st | grep -v cassettes
+}
