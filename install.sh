@@ -38,3 +38,5 @@ ln_it_to_home "vimrc"
 ln_it_to_home "rvmrc"
 
 ln_it_to_home "jshintrc"
+
+ln_it_to_home "ackrc"
