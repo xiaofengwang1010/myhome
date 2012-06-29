@@ -45,11 +45,11 @@ alias grep='grep -P -a --color=auto'
 alias k9='kill -9'
 
 alias bi='bundle install'
+alias bu='bundle update'
 alias bl='bundle list'
 alias be='bundle exec'
 alias br='bundle exec rspec'
 alias bs='bundle exec spinach'
-alias bc='bundle exec cucumber'
 alias cuke='be cucumber '
 alias brails='bundle exec rails'
 
@@ -66,3 +66,5 @@ alias sqlplus='rlwrap sqlplus'
 
 alias git-manual-page='open http://schacon.github.com/git/git.html'
 alias cheat-git='open http://cheat.errtheblog.com/s/git'
+
+alias Downloads='cd ~/Downloads/'
