@@ -13,7 +13,7 @@ ln_it_to_home()
     home_files="$HOME/.${target_name}"
     backup_name="${home_files}.backup"
 
-    cp -rf "${home_files}" "${backup_name}"
+    cp -rf "${home_files}" "${backup_name}" 2>/dev/null
 
     ln -sf -n -v `pwd -P`/"${new_files}" "${home_files}"
 
