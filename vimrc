@@ -15,6 +15,15 @@ set history=10000
 " Enable filetype plugin
 filetype plugin indent on
 
+
+imap yy <Esc>
+imap aa <Esc>
+imap zz <Esc>
+imap jj <Esc>
+imap kk <Esc>
+imap jk <Esc>
+imap kj <Esc>
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
