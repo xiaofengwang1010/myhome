@@ -17,15 +17,35 @@ EOF
 }
 
 rm_cassettes_spec() {
-  rm -rf ./spec/cassettes
+  rm -rf ./spec/cassettes/*
 }
 
 rm_cassettes_features() {
-  rm -rf ./features/cassettes
+  rm -rf ./features/cassettes/*
 }
 
 rm_cassettes() {
   rm_cassettes_spec && rm_cassettes_features
+}
+
+rmcassettes() {
+  rm_cassettes
+}
+
+co_cassettes_spec() {
+  [[ -d ./spec/cassettes/ ]] && git co ./spec/cassettes
+}
+
+co_cassettes_features() {
+  [[ -d ./features/cassettes/ ]] && git co ./features/cassettes
+}
+
+co_cassettes() {
+  co_cassettes_spec && co_cassettes_features
+}
+
+cocassettes() {
+  co_cassettes
 }
 
 gst() {
