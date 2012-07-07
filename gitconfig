@@ -24,6 +24,11 @@
   ds = diff --stat
   dc = diff --cached
   pr = pull --rebase
+  rc = rebase --continue
+  rcontinue = rebase --continue
+  rs = rebase --skip
+  rskip = rebase --skip
+  rabort = rebase --abort
   oneline = log --pretty=oneline --since='2 days ago' --abbrev-commit
   onelog = log -p -1 --abbrev-commit
   l    = log --graph --oneline --abbrev-commit --decorate --all
@@ -37,6 +42,7 @@
   l8   = log --graph --oneline --abbrev-commit --decorate --all -8
   l9   = log --graph --oneline --abbrev-commit --decorate --all -9
   glog = log --graph --oneline --abbrev-commit --decorate --all --pretty='%Cgreen%h%Creset %Cred%cr%Creset %s %Cgreen<%aN>%Creset'
+  recover = reset --hard
   unstage = reset HEAD --
   last = log -1 HEAD
 
