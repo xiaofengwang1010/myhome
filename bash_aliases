@@ -65,6 +65,9 @@ alias g='git'
 alias sqlplus='rlwrap sqlplus'
 
 alias git-manual-page='open http://schacon.github.com/git/git.html'
-alias cheat-git='open http://cheat.errtheblog.com/s/git'
+alias cheatsheet-git='open http://cheat.errtheblog.com/s/git'
+alias cheatsheet-resqueue='open http://whatcodecraves.com/articles/2010/06/22/resque_cheatsheet/index.html'
+alias httpstatus='open http://www.iana.org/assignments/http-status-codes/http-status-codes.xml'
+alias httpcode='httpstatus'
 
 alias Downloads='cd ~/Downloads/'
