@@ -1,2 +1,2 @@
 --type-set
-ruby=.rb,.rhtml,.rjs,.rxml,.erb,.rake,.spec,.feature,
+ruby=.rb,.rhtml,.rjs,.rxml,.erb,.rake,.spec,.feature,.task
