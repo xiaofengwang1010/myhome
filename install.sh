@@ -23,6 +23,7 @@ ln_it_to_home()
 ln_it_to_home "autotest"
 ln_it_to_home "autotest_images"
 
+ln_it_to_home "bash_profile"
 ln_it_to_home "bashrc"
 ln_it_to_home "bash_aliases"
 ln_it_to_home "bashrc_history"
