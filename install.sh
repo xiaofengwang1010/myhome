@@ -11,7 +11,8 @@ ln_it_to_home()
     target_name="$1"
     new_files="$target_name"
     home_files="$HOME/.${target_name}"
-    backup_name="${home_files}.backup"
+    date_string=$(date +%Y-%m-%d_%H-%M-%S)
+    backup_name="${home_files}.backup.${date_string}"
 
     cp -rf "${home_files}" "${backup_name}" 2>/dev/null
 
