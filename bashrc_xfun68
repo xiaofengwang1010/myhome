@@ -465,7 +465,7 @@ fi
 
 open() {
   PORT=$(echo "$1" | egrep "^[0-9]{4,}$")
-  URL=$(echo "$1" | grep -v 'http' | egrep ".*\.com.*")
+  URL=$(echo "$1" | grep -v 'http' | egrep "(.*\.com.*)|(^localhost:.*)")
 
   if [[ -n "${PORT}" ]]
   then
