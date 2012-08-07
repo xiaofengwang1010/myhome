@@ -27,7 +27,7 @@ iba() {
     open 5300
   elif [[ ${app} == "profiles" ]]
   then
-    open 5500
+    open "localhost:5500/seed"
   elif [[ ${app} == "store" ]]
   then
     open 5600
