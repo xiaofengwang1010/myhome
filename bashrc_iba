@@ -1,17 +1,3 @@
-iba() {
-  app=${1:-none}
-
-  if [[ ${app} == "admin" ]]
-  then
-    open 5000
-  elif [[ ${app} == "profiles" ]]
-  then
-    open 5500
-  else
-    cd $HOME/code/iba
-  fi
-}
-
 ports() {
   cat <<-EOF
   5000 => admin
@@ -28,6 +14,20 @@ ports() {
   5901 => adobe_entitlements
   5902 => subscriptions
 EOF
+}
+
+iba() {
+  app=${1:-none}
+
+  if [[ ${app} == "admin" ]]
+  then
+    open 5000
+  elif [[ ${app} == "profiles" ]]
+  then
+    open 5500
+  else
+    cd $HOME/code/iba
+  fi
 }
 
 rm_cassettes_spec() {
