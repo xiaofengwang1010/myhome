@@ -1,3 +1,7 @@
+iba() {
+  cd $HOME/code/iba
+}
+
 ports() {
   cat <<-EOF
   5000 => admin
