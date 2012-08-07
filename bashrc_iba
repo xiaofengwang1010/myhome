@@ -22,9 +22,15 @@ iba() {
   if [[ ${app} == "admin" ]]
   then
     open 5000
+  elif [[ ${app} == "jobs" ]]
+  then
+    open 5300
   elif [[ ${app} == "profiles" ]]
   then
     open 5500
+  elif [[ ${app} == "store" ]]
+  then
+    open 5600
   else
     cd $HOME/code/iba
   fi
