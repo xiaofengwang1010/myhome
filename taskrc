@@ -27,3 +27,7 @@ data.location=/Users/panda/.task
 include /usr/local/Cellar/task/2.1.1/share/doc/task/rc/dark-yellow-green.theme
 #include /usr/local/Cellar/task/2.1.1/share/doc/task/rc/dark-gray-256.theme
 
+# Holidays
+calendar.holidays=full
+
+include /usr/local/Cellar/task/2.1.1/share/doc/task/rc/holidays.en-US.rc
