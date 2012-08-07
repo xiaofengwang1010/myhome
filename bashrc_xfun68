@@ -460,6 +460,25 @@ if [ -f `brew --prefix`/etc/autojump ]; then
 fi
 
 #########################################################
+## Customized system command extensions
+#########################################################
+
+open() {
+  PORT=$(echo "$1" | egrep "^[0-9]{4,}$")
+  URL=$(echo "$1" | grep -v 'http' | egrep ".*\.com.*")
+
+  if [[ -n "${PORT}" ]]
+  then
+    /usr/bin/open "http://localhost:${PORT}/"
+  elif [[ -n "${URL}" ]]
+  then
+    /usr/bin/open "http://$URL/"
+  else
+    /usr/bin/open "${1}"
+  fi
+}
+
+#########################################################
 ## rvm, should be always at the end of this file
 #########################################################
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
