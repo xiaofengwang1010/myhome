@@ -71,3 +71,5 @@ alias httpstatus='open http://www.iana.org/assignments/http-status-codes/http-st
 alias httpcode='httpstatus'
 
 alias Downloads='cd ~/Downloads/'
+
+alias resource='source ~/.bashrc'
