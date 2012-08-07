@@ -47,3 +47,5 @@ ln_it_to_home "rvmrc"
 ln_it_to_home "jshintrc"
 
 ln_it_to_home "ackrc"
+
+ln_it_to_home "taskrc"
