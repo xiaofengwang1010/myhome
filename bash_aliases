@@ -73,3 +73,5 @@ alias httpcode='httpstatus'
 alias Downloads='cd ~/Downloads/'
 
 alias resource='source ~/.bashrc'
+
+alias t='task'
