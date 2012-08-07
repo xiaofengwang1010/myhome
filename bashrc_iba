@@ -36,6 +36,29 @@ iba() {
   fi
 }
 
+iba_app_name() {
+  basename $(pwd)
+}
+
+iba_app_port() {
+  ports | grep $(iba_app_name) | tr -d ' ' | cut -d '=' -f 1
+}
+
+restart() {
+  app_name=$(iba_app_name)
+  (cd .. && rake restart:${app_name})
+}
+
+stop() {
+  app_name=$(iba_app_name)
+  (cd .. && rake stop:${app_name})
+}
+
+run() {
+  app_port=$(iba_app_port)
+  rackup -p ${app_port}
+}
+
 rm_cassettes_spec() {
   rm -rf ./spec/cassettes/*
 }
