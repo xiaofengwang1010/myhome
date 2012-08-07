@@ -1,4 +1,5 @@
 alias lol='open ~/.lolcommits'
+alias mute='osascript -e "set Volume 0"'
 
 alias ls='ls -FG'
 alias ll='ls -lFG'
