@@ -33,7 +33,7 @@ alias qa='cd ~/code/rea/qa/'
 alias e2e_rea_api='cd ~/code/rea/qa/e2e_rea_api'
 alias e2e='e2e_rea_api'
 
-alias blog='cd ~/code/blog/_posts'
+alias blog='cd ~/code/blog/source/_posts'
 
 alias hi=' history | less +G'
 
