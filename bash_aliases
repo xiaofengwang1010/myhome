@@ -76,3 +76,5 @@ alias Downloads='cd ~/Downloads/'
 alias resource='source ~/.bashrc'
 
 alias t='task'
+
+alias please='sudo'
