@@ -2,6 +2,9 @@
 
 mkdir -p ~/.tmp_files/vim/{backups,tmp}
 
+git submodule init
+git submodule update
+
 ln_it_to_home()
 {
     if [ -z "$1" ]; then
