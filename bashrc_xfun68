@@ -418,6 +418,13 @@ _rakecomplete() {
 complete -o default -o nospace -F _rakecomplete rake
 
 #########################################################
+## Homebrew autocompletion
+#########################################################
+
+HOMEBREW_COMPLETION_FILE="`brew --prefix`/etc/bash_completion"
+[ -f ${HOMEBREW_COMPLETION_FILE} ] && . ${HOMEBREW_COMPLETION_FILE}
+
+#########################################################
 ## preview - Call program preview from command line
 #########################################################
 preview() {
