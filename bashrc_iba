@@ -59,6 +59,10 @@ run() {
   rackup -p ${app_port}
 }
 
+alias run_jobs='QUEUE=* rake resque:work'
+alias run-jobs='run_jobs'
+alias runjobs='run_jobs'
+
 rm_cassettes_spec() {
   rm -rf ./spec/cassettes/*
 }
