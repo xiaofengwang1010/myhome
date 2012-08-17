@@ -67,9 +67,13 @@ rm_cassettes_spec() {
   rm -rf ./spec/cassettes/*
 }
 
+alias rm_spec_cassettes='rm_cassettes_spec'
+
 rm_cassettes_features() {
   rm -rf ./features/cassettes/*
 }
+
+alias rm_features_cassettes='rm_cassettes_features'
 
 rm_cassettes() {
   rm_cassettes_spec && rm_cassettes_features
@@ -83,9 +87,13 @@ co_cassettes_spec() {
   [[ -d ./spec/cassettes/ ]] && git co ./spec/cassettes
 }
 
+alias co_spec_cassettes='co_cassettes_spec'
+
 co_cassettes_features() {
   [[ -d ./features/cassettes/ ]] && git co ./features/cassettes
 }
+
+alias co_features_cassettes='co_cassettes_features'
 
 co_cassettes() {
   co_cassettes_spec && co_cassettes_features
