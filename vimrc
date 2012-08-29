@@ -322,6 +322,7 @@ vnoremap $e <esc>`>a"<esc>`<i"<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 iab xdate <c-r>=strftime("%Y/%m/%d %H:%M:%S")<cr>
 iab xpry require 'pry'; binding.pry
+iab bpry binding.pry
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Editing mappings
