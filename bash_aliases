@@ -41,7 +41,7 @@ alias vi='/usr/bin/vim'
 alias vim='vi'
 alias vimrc='vim ~/.vimrc'
 
-alias grep='grep -P -a --color=auto'
+alias grep='grep -a --color=auto'
 
 alias k9='kill -9'
 
@@ -49,7 +49,7 @@ alias bi='bundle install'
 alias bu='bundle update'
 alias bl='bundle list'
 alias be='bundle exec'
-alias br='bundle exec rspec'
+alias br='bundle exec rspec --format documentation --profile'
 alias bs='bundle exec spinach'
 alias cuke='be cucumber '
 alias brails='bundle exec rails'
