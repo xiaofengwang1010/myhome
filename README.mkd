@@ -1,15 +1,15 @@
 # myhome
 
-保存了我本人$HOME下所有自定义了的东西。
+All of my customized stuff are here.
 
 -------------------------------------------------------------------------
 
-### 使用方法
+### Usage
 
     $ sudo apt-get install git-all
     $ cd path/to/where/you/want/to/place/it
     $ git clone git://github.com/xfun68/myhome.git 
     $ cd myhome
-    $ sh install.sh
+    $ ./run_me_to_install
     $ echo enjoy it
 
