@@ -1,4 +1,4 @@
-#!/bin/shell
+#!/usr/bin/env bash
 
 mkdir -p ~/.tmp_files/vim/{backups,tmp}
 
