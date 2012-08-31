@@ -41,7 +41,7 @@ iba_app_name() {
 }
 
 iba_app_port() {
-  ports | grep $(iba_app_name) | tr -d ' ' | cut -d '=' -f 1
+  ports | grep "\<$(iba_app_name)\>" | tr -d ' ' | cut -d '=' -f 1
 }
 
 restart() {
