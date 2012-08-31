@@ -486,6 +486,14 @@ open() {
 }
 
 #########################################################
+## Autojump
+#########################################################
+
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
+
+#########################################################
 ## rvm, should be always at the end of this file
 #########################################################
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
