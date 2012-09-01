@@ -25,13 +25,6 @@ alias recd='cd .. && cd -'
 alias tmp='cd ~/tmp/'
 alias code='cd ~/code'
 alias codejam='cd ~/code/codejam'
-alias rea='cd ~/code/rea'
-alias mock_ds='mockds'
-alias rea-api='cd ~/code/rea/rea-api'
-alias syndication-rest-api='cd ~/code/rea/syndication-rest-api'
-alias qa='cd ~/code/rea/qa/'
-alias e2e_rea_api='cd ~/code/rea/qa/e2e_rea_api'
-alias e2e='e2e_rea_api'
 
 alias blog='cd ~/code/blog/source/_posts'
 
