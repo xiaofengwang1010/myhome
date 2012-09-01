@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/.tmp_files/vim/{backups,tmp}
+
+git submodule init
+git submodule update
+
+ln_it_to_home()
+{
+    if [ -z "$1" ]; then
+        return 1
+    fi
+
+    target_name="$1"
+    new_files="$target_name"
+    home_files="$HOME/.${target_name}"
+    date_string=$(date +%Y-%m-%d_%H-%M-%S)
+    backup_name="${home_files}.backup.${date_string}"
+
+    cp -rf "${home_files}" "${backup_name}" 2>/dev/null
+
+    ln -sf -n -v `pwd -P`/"${new_files}" "${home_files}"
+
+    return $?
+}
+
+ln_it_to_home "autotest"
+ln_it_to_home "autotest_images"
+
+ln_it_to_home "bash_profile"
+ln_it_to_home "bashrc"
+ln_it_to_home "bash_aliases"
+ln_it_to_home "bashrc_history"
+ln_it_to_home "bashrc_oracle"
+ln_it_to_home "bashrc_iba"
+ln_it_to_home "bashrc_xfun68"
+
+ln_it_to_home "gitconfig"
+ln_it_to_home "githelpers"
+ln_it_to_home "bashrc_git"
+ln_it_to_home "git-completion.bash"
+
+ln_it_to_home "tmux.conf"
+
+ln_it_to_home "vim"
+ln_it_to_home "vimrc"
+
+ln_it_to_home "rvmrc"
+
+ln_it_to_home "jshintrc"
+
+ln_it_to_home "ackrc"
+
+ln_it_to_home "taskrc"

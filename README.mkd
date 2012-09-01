@@ -6,10 +6,10 @@ All of my customized stuff are here.
 
 ### Usage
 
-    $ sudo apt-get install git-all
-    $ cd path/to/where/you/want/to/place/it
-    $ git clone git://github.com/xfun68/myhome.git 
-    $ cd myhome
-    $ ./run_me_to_install
-    $ echo enjoy it
+```bash
+$ git clone git://github.com/xfun68/myhome.git
+$ cd myhome
+$ ./RUN_ME_TO_INSTALL
+$ echo "Enjoy It!"
+```
 
