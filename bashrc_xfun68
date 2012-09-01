@@ -490,6 +490,20 @@ if [ -f `brew --prefix`/etc/autojump ]; then
 fi
 
 #########################################################
+## Current Time String
+#########################################################
+
+current_time_string() {
+  date "+%Y-%m-%d_%H:%M:%S"
+}
+
+
+vi() {
+  log_file="$HOME/tmp/vim_startup_time_$(current_time_string).log"
+  /usr/local/bin/vim --startuptime "${log_file}" "$*"
+}
+
+#########################################################
 ## rvm, should be always at the end of this file
 #########################################################
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

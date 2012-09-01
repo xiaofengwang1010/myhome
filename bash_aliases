@@ -30,8 +30,6 @@ alias blog='cd ~/code/blog/source/_posts'
 
 alias hi=' history | less +G'
 
-alias vi='/usr/bin/vim'
-alias vim='vi'
 alias vimrc='vim ~/.vimrc'
 
 alias grep='grep -a --color=auto'
