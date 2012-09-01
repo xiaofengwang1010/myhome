@@ -462,10 +462,6 @@ abs()
   open 'http://tldp.org/LDP/abs/html/'
 }
 
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
-fi
-
 #########################################################
 ## Customized system command extensions
 #########################################################
