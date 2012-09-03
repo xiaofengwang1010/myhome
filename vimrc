@@ -5,8 +5,8 @@ endif
 " }}}
 
 " Load vim bundle configuration {{{
-if filereadable(expand("~/.vim/bundle.vimrc"))
-  source ~/.vim/bundle.vimrc
+if filereadable(expand("~/.vim/vundle.vimrc"))
+  source ~/.vim/vundle.vimrc
 endif
 " }}}
 
