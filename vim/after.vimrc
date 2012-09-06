@@ -221,6 +221,13 @@ cnoremap <c-p> <up>
 cnoremap <esc><c-b> <s-left>
 cnoremap <esc><c-f> <s-right>
 
+" Parenthesis/bracket expanding
+vnoremap @( <esc>`>a)<esc>`<i(<esc>
+vnoremap @[ <esc>`>a]<esc>`<i[<esc>
+vnoremap @{ <esc>`>a}<esc>`<i{<esc>
+vnoremap @" <esc>`>a"<esc>`<i"<esc>
+vnoremap @' <esc>`>a'<esc>`<i'<esc>
+
 " In visual mode when you press * or # to search for the current selection
 vnoremap <silent> * :call VisualSearch('f')<CR>
 vnoremap <silent> # :call VisualSearch('b')<CR>
