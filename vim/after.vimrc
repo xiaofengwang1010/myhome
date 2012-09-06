@@ -228,6 +228,14 @@ vnoremap @{ <esc>`>a}<esc>`<i{<esc>
 vnoremap @" <esc>`>a"<esc>`<i"<esc>
 vnoremap @' <esc>`>a'<esc>`<i'<esc>
 
+" Map auto complete of (, ", ', [
+inoremap @( ()<esc>i
+inoremap @[ []<esc>i
+inoremap @{ {}<esc>i
+inoremap @} {<esc>o}<esc>O
+inoremap @" ""<esc>i
+inoremap @' ''<esc>i
+
 " In visual mode when you press * or # to search for the current selection
 vnoremap <silent> * :call VisualSearch('f')<CR>
 vnoremap <silent> # :call VisualSearch('b')<CR>
