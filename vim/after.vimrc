@@ -8,7 +8,7 @@
 set nocompatible
 
 set history=10000      " Number of things to remember in history.
-set timeoutlen=600     " Time to wait after ESC
+set timeoutlen=800     " Time to wait after ESC
 set clipboard+=unnamed " Yanks go on clipboard instead.
 set pastetoggle=<F10>  " Toggle between paste and normal: for 'safer' pasting from keyboard
 set shiftround         " Round indent to multiple of 'shiftwidth'
