@@ -10,6 +10,10 @@ call vundle#rc()
 
 Bundle 'altercation/vim-colors-solarized'
 
+Bundle 'kien/ctrlp.vim'
+let g:ctrlp_cmd = 'CtrlPMixed'
+set wildignore+=*/tmp/*,*/cassettes/*,*.so,*.swp,*.zip,*.log
+
 filetype plugin indent on     " REQUIRED!
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
