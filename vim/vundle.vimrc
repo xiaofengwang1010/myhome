@@ -12,6 +12,8 @@ call vundle#rc()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'mileszs/ack.vim'
 
+Bundle 'sjl/gundo.vim'
+
 Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'kien/ctrlp.vim'
