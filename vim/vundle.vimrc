@@ -1,7 +1,10 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" REQUIRED!
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
-filetype off                   " REQUIRED!
+filetype off
 
-set rtp+=~/.vim/vundle.git/ 
+set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -14,11 +17,7 @@ Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
 set wildignore+=*/tmp/*,*/cassettes/*,*.so,*.swp,*.zip,*.log
 
-filetype plugin indent on     " REQUIRED!
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Following lines are examples
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " original repos on github
 "Bundle 'tpope/vim-fugitive'
@@ -33,3 +32,8 @@ filetype plugin indent on     " REQUIRED!
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" REQUIRED!
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin indent on
