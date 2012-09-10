@@ -27,6 +27,7 @@ Bundle 'quentindecock/vim-cucumber-align-pipes'
 Bundle 'robbevan/Vagrantfile.vim'
 
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'janx/vim-rubytest'
 
 Bundle 'msanders/snipmate.vim'
 
