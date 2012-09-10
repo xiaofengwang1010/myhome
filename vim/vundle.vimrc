@@ -20,6 +20,8 @@ Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'godlygeek/tabular'
 
+Bundle 'quentindecock/vim-cucumber-align-pipes'
+
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
 set wildignore+=*/tmp/*,*/cassettes/*,*.so,*.swp,*.zip,*.log
