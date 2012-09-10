@@ -12,6 +12,8 @@ call vundle#rc()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'mileszs/ack.vim'
 
+Bundle 'Lokaltog/vim-easymotion'
+
 Bundle 'sjl/gundo.vim'
 
 Bundle 'altercation/vim-colors-solarized'
@@ -26,17 +28,14 @@ Bundle 'robbevan/Vagrantfile.vim'
 
 Bundle 'vim-ruby/vim-ruby'
 
-Bundle 'tpope/vim-endwise'
-
 Bundle 'msanders/snipmate.vim'
 
+Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
 set wildignore+=*/tmp/*,*/cassettes/*,*.so,*.swp,*.zip,*.log
-
-Bundle 'Lokaltog/vim-easymotion'
 
 Bundle 'Shougo/neocomplcache'
 " Disable AutoComplPop.
