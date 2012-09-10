@@ -15,7 +15,7 @@
   ap = add -p
   s  = status -sb
   st = status -sb
-  ci = commit
+  ci = commit -v
   co = checkout
   br = branch
   d  = diff
