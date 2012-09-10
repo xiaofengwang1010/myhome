@@ -26,6 +26,8 @@ Bundle 'robbevan/Vagrantfile.vim'
 
 Bundle 'vim-ruby/vim-ruby'
 
+Bundle 'tpope/vim-endwise'
+
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
 set wildignore+=*/tmp/*,*/cassettes/*,*.so,*.swp,*.zip,*.log
