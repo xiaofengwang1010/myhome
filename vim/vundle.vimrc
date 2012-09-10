@@ -24,6 +24,8 @@ Bundle 'quentindecock/vim-cucumber-align-pipes'
 
 Bundle 'robbevan/Vagrantfile.vim'
 
+Bundle 'vim-ruby/vim-ruby'
+
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
 set wildignore+=*/tmp/*,*/cassettes/*,*.so,*.swp,*.zip,*.log
