@@ -172,7 +172,7 @@ endif
 nnoremap <leader>c mz"dyy"dp`z
 vnoremap <leader>c "dymz"dP`z
 
-nnoremap <silent> <LocalLeader>rs :source ~/.vimrc<CR>
+nnoremap <silent> <LocalLeader>so :source ~/.vimrc<CR>
 nnoremap <silent> <LocalLeader>re :edit   ~/.vimrc<CR>
 
 " Tabs (not working on Mac)
