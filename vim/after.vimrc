@@ -169,6 +169,11 @@ endif
 
 " Key mappings " {{{
 " Duplication
+nnoremap <silent> <LocalLeader>bi :BundleInstall<CR>
+nnoremap <silent> <LocalLeader>bc :BundleClean<CR>
+nnoremap <silent> <LocalLeader>bl :BundleList<CR>
+nnoremap <silent> <LocalLeader>bs :BundleSearch<CR>
+
 nnoremap <leader>c mz"dyy"dp`z
 vnoremap <leader>c "dymz"dP`z
 
