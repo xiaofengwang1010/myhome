@@ -173,7 +173,7 @@ nnoremap <leader>c mz"dyy"dp`z
 vnoremap <leader>c "dymz"dP`z
 
 nnoremap <silent> <LocalLeader>so :source ~/.vimrc<CR>
-nnoremap <silent> <LocalLeader>re :edit   ~/.vimrc<CR>
+nnoremap <silent> <LocalLeader>rc :edit   ~/.vimrc<CR>
 
 " Tabs (not working on Mac)
 "nnoremap <C-H> :bp<CR>
