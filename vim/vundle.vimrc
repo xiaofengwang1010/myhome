@@ -32,6 +32,7 @@ Bundle 'msanders/snipmate.vim'
 
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
