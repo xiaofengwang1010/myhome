@@ -28,6 +28,9 @@ Bundle 'robbevan/Vagrantfile.vim'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'janx/vim-rubytest'
+let g:rubytest_cmd_spec = "rspec -f documentation --profile %p"
+let g:rubytest_cmd_example = "rspec -f documentation --profile %p --line_number '%c'"
+let g:rubytest_cmd_story = "cucumber %p --lines '%c'"
 
 Bundle 'msanders/snipmate.vim'
 
