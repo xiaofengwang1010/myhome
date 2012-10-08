@@ -151,15 +151,15 @@ if has('gui_running')
 
   " Fonts
   if has('mac')
-  set guifont=Andale\ Mono:h13
+    set guifont=Andale\ Mono:h13
   else
-  set guifont=Terminus:h16
+    set guifont=Terminus:h16
   end
 
   if has('mac')
-  set noantialias
-  set fullscreen
-  set fuoptions=maxvert,maxhorz
+    set noantialias
+    set fullscreen
+    set fuoptions=maxvert,maxhorz
   endif
 endif
 " "}}}
