@@ -52,6 +52,9 @@ Bundle 'gmarik/sudo-gui.vim'
 Bundle 'gmarik/github-search.vim'
 let g:github_search_path_format = '~/code/github_repo/:repo'
 
+Bundle 'AndrewRadev/splitjoin.vim'
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
