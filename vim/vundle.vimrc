@@ -23,6 +23,7 @@ colorscheme solarized
 Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/Align'
 
 Bundle 'quentindecock/vim-cucumber-align-pipes'
 
