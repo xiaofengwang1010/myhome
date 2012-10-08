@@ -2,6 +2,14 @@
 " https://github.com/gmarik/vimfiles/blob/master/vimrc
 
 " TODO
+" https://github.com/Lokaltog/vim-powerline
+" https://github.com/vim-scripts/DrawIt
+" https://github.com/scrooloose/syntastic
+" https://github.com/carlhuda/janus
+" https://github.com/mutewinter/dot_vim
+" https://github.com/zaiste/vimified
+" https://github.com/kepbod/ivim
+" https://github.com/aaronjensen/vimfiles/blob/master/vimrc
 " http://zanshin.net/2011/11/15/using-vim/
 
 " General "{{{
