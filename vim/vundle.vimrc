@@ -48,6 +48,8 @@ Bundle 'avakhov/vim-file-line'
 
 Bundle 'nathanaelkane/vim-indent-guides'
 
+Bundle 'gmarik/sudo-gui.vim'
+
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
 set wildignore+=*/tmp/*,*/cassettes/*,*.so,*.swp,*.zip,*.log
