@@ -49,6 +49,9 @@ Bundle 'avakhov/vim-file-line'
 Bundle 'nathanaelkane/vim-indent-guides'
 
 Bundle 'gmarik/sudo-gui.vim'
+Bundle 'gmarik/github-search.vim'
+let g:github_search_path_format = '~/code/github_repo/:repo'
+
 
 Bundle 'kien/ctrlp.vim'
 let g:ctrlp_cmd = 'CtrlPMixed'
