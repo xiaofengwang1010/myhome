@@ -198,7 +198,10 @@ map <silent> <leader>. :let @+=expand('%:p').':'.line('.')<CR>
 
 map <leader>e :Vexplore!<CR><C-W>=
 
-nmap <leader>q :wqa<CR>
+nmap <leader>q :q<CR>
+nmap <leader>qa :qa<CR>
+nmap <leader>wq :wq<CR>
+nmap <leader>wqa :wqa<CR>
 nmap <leader>u :update<CR>
 imap jj <Esc>
 imap jk <Esc>
