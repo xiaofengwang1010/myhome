@@ -98,9 +98,6 @@ set cinwords=if,else,while,do,for,switch,case
 syntax enable
 filetype plugin indent on
 
-set background=dark
-colorscheme solarized
-
 set colorcolumn=81
 
 " Set 1 line to the curors - when moving vertical..
