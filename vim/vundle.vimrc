@@ -38,6 +38,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'tpope/vim-ragtag'
 
 Bundle 'mattn/zencoding-vim'
 
