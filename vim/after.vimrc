@@ -238,8 +238,8 @@ map <leader>to :tabnew<cr>
 map <leader>td :tabclose<cr>
 map <leader>tn :tabnext<cr>
 map <leader>tp :tabprevious<cr>
-map <leader>te :tabedit 
-map <leader>tm :tabmove 
+map <leader>te :tabedit
+map <leader>tm :tabmove
 
 " Parenthesis/bracket expanding
 vnoremap @( <esc>`>a)<esc>`<i(<esc>
