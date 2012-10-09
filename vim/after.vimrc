@@ -166,7 +166,6 @@ if has('gui_running')
 
   if has('mac')
     set noantialias
-    set fullscreen
     set fuoptions=maxvert,maxhorz
   endif
 endif
