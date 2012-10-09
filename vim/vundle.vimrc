@@ -17,6 +17,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'sjl/gundo.vim'
 
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/peaksea'
 
 Bundle 'scrooloose/nerdcommenter'
 
