@@ -15,6 +15,12 @@
 " General "{{{
 set nocompatible
 
+let g:is_posix = 1             " vim's default is archaic bourne shell, bring it up to the 90s
+
+let mapleader      = ","
+let g:mapleader    = ","
+let maplocalleader = ","
+
 set history=10000      " Number of things to remember in history.
 set timeoutlen=800     " Time to wait after ESC
 set clipboard+=unnamed " Yanks go on clipboard instead.
@@ -65,12 +71,6 @@ map - <C-W>-
 map + <C-W>+
 map ( <C-W><
 map ) <C-W>>
-
-let g:is_posix = 1             " vim's default is archaic bourne shell, bring it up to the 90s
-
-let mapleader      = ","
-let g:mapleader    = ","
-let maplocalleader = ","
 " "}}}
 
 " Formatting "{{{
