@@ -161,8 +161,8 @@ if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
 
   if has('mac')
-    set guifont=Andale\ Mono:h13
-    set noantialias
+    set guifont=Monaco:h12
+    set antialias
     set fullscreen
     set fuoptions=maxvert,maxhorz
   else
