@@ -47,6 +47,10 @@ Bundle 'avakhov/vim-file-line'
 
 Bundle 'nathanaelkane/vim-indent-guides'
 
+Bundle 'tComment'
+nnoremap // :TComment<CR>
+vnoremap // :TComment<CR>
+
 Bundle 'vim-scripts/ZoomWin'
 noremap <leader>o :ZoomWin<CR>
 vnoremap <leader>o <C-C>:ZoomWin<CR>
