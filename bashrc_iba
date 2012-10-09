@@ -44,6 +44,11 @@ iba_app_port() {
   ports | grep "\<$(iba_app_name)\>" | tr -d ' ' | cut -d '=' -f 1
 }
 
+start() {
+  app_name=$(iba_app_name)
+  (cd .. && rake run:${app_name})
+}
+
 restart() {
   app_name=$(iba_app_name)
   (cd .. && rake restart:${app_name})
@@ -59,9 +64,12 @@ run() {
   rackup -p ${app_port}
 }
 
-alias run_jobs='QUEUE=* rake resque:work'
-alias run-jobs='run_jobs'
-alias runjobs='run_jobs'
+alias run_worker='QUEUE=* rake resque:work'
+alias run-worker='run_worker'
+alias runworker='run_worker'
+alias run_scheduler='rake resque:scheduler'
+alias run-scheduler='run_scheduler'
+alias runscheduler='run_scheduler'
 
 rm_cassettes_spec() {
   rm -rf ./spec/cassettes/*
@@ -107,7 +115,13 @@ gst() {
   git st | grep -v cassettes
 }
 
+get_entitlement_from_dls() {
+  curl --digest -u 'ess:123456' https://api-dls.homolog.abrildigital.com.br/account/obter-link -d "id-item=$*"
+}
+
 alias tunnel-crp='ssh -L 6521:10.80.3.201:1521 ess61'
 alias tunnel_crp='tunnel-crp'
 alias tunnel-ftf='ssh -L 7521:10.80.3.201:1521 ess61'
 alias tunnel_ftf='tunnel-ftf'
+alias tunnel-cpf='ssh -L 14545:172.20.8.7:14545 iba-dev01'
+alias tunnel_cpf='tunnel-cpf'
