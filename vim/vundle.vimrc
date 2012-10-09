@@ -47,6 +47,11 @@ Bundle 'avakhov/vim-file-line'
 
 Bundle 'nathanaelkane/vim-indent-guides'
 
+Bundle 'vim-scripts/ZoomWin'
+noremap <leader>o :ZoomWin<CR>
+vnoremap <leader>o <C-C>:ZoomWin<CR>
+inoremap <leader>o <C-O>:ZoomWin<CR>
+
 Bundle 'gmarik/sudo-gui.vim'
 Bundle 'gmarik/github-search.vim'
 let g:github_search_path_format = '~/code/github_repo/:repo'
