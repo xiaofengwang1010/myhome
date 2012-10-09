@@ -106,6 +106,8 @@ set cinwords=if,else,while,do,for,switch,case
 syntax enable
 filetype plugin indent on
 
+set background=dark
+
 set colorcolumn=81
 
 " Set 1 line to the curors - when moving vertical..
@@ -160,8 +162,10 @@ if has('gui_running')
   " Fonts
   if has('mac')
     set guifont=Andale\ Mono:h13
+    colorscheme solarized
   else
     set guifont=Terminus:h16
+    colorscheme peaksea
   end
 
   if has('mac')
