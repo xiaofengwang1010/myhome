@@ -17,6 +17,7 @@
   st = status -sb
   ci = commit -v
   co = checkout
+  cp = checkout -p
   br = branch
   d  = diff
   di = diff
@@ -25,6 +26,7 @@
   dc = diff --cached
   pr = pull --rebase
   rc = rebase --continue
+  ri = rebase --interactive
   rcontinue = rebase --continue
   rs = rebase --skip
   rskip = rebase --skip
