@@ -165,13 +165,14 @@ if has('gui_running')
     colorscheme solarized
   else
     set guifont=Terminus:h16
-    colorscheme peaksea
   end
 
   if has('mac')
     set noantialias
     set fuoptions=maxvert,maxhorz
   endif
+else
+  colorscheme peaksea
 endif
 " "}}}
 
