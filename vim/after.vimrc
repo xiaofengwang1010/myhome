@@ -107,6 +107,7 @@ syntax enable
 filetype plugin indent on
 
 set background=dark
+colorscheme solarized
 
 set colorcolumn=81
 
@@ -159,9 +160,7 @@ map <silent> <F11> :set invlist<CR>
 if has('gui_running')
   set guioptions=cMg " console dialogs, do not show menu and toolbar
 
-  " Fonts
   if has('mac')
-    colorscheme solarized
     set guifont=Andale\ Mono:h13
     set noantialias
     set fullscreen
@@ -169,8 +168,6 @@ if has('gui_running')
   else
     set guifont=Terminus:h16
   end
-else
-  colorscheme peaksea
 endif
 " "}}}
 
