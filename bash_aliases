@@ -9,7 +9,6 @@ alias l='ls -hlFG'
 alias rm='rm -i' # DON'T USE rm -rf ALWAYS, BE CAREFUL
 alias rdf='rm -rf'
 
-alias  d='cd ..'
 alias up='cd ..'
 alias up2='cd ../..'
 alias up3='cd ../../..'
@@ -19,7 +18,8 @@ alias up6='cd ../../../../../..'
 alias up7='cd ../../../../../../..'
 alias up8='cd ../../../../../../../..'
 alias up9='cd ../../../../../../../../..'
-alias recd='cd .. && cd -'
+alias back='cd -'
+alias recd='up && back'
 
 # shortcuts for entering specific project dir
 alias tmp='cd ~/tmp/'
@@ -36,21 +36,25 @@ alias grep='grep -a --color=auto'
 
 alias k9='kill -9'
 
+alias rake='time rake'
 alias bi='bundle install'
 alias bu='bundle update'
 alias bl='bundle list'
-alias be='bundle exec'
-alias br='bundle exec rspec --format documentation --profile'
-alias bs='bundle exec spinach'
+alias be='time bundle exec'
+alias br='be rspec --format documentation --color --profile'
+alias rspec='br'
+alias bs='be spinach'
+alias spinach='bs'
 alias cuke='be cucumber '
-alias brails='bundle exec rails'
+alias cucumber='cuke'
+alias brails='be rails'
 
 alias sll='svn log | less'
 
 alias reset-cisco='sudo SystemStarter restart CiscoVPN'
 alias restart-cisco='reset-cisco'
 
-alias spec='be spec --format nested --color '
+alias spec='be spec --format documentation --color --profile'
 
 alias g='git'
 
