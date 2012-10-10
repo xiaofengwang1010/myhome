@@ -39,6 +39,8 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-ragtag'
 
+Bundle 'gregsexton/gitv'
+
 Bundle 'mattn/zencoding-vim'
 
 Bundle 'michaeljsmith/vim-indent-object'
