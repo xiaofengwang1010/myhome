@@ -19,6 +19,9 @@ Bundle 'sjl/gundo.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/peaksea'
 
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+
 Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'godlygeek/tabular'
