@@ -25,6 +25,7 @@
   ds = diff --stat
   dc = diff --cached
   pr = pull --rebase
+  ps = push
   rc = rebase --continue
   ri = rebase --interactive
   rcontinue = rebase --continue
