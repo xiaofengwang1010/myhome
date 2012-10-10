@@ -15,7 +15,10 @@
   ap = add -p
   s  = status -sb
   st = status -sb
-  ci = commit -v
+  ci = commit
+  cm = commit -m
+  cv = commit -v
+  cav= commit -av
   co = checkout
   cp = checkout -p
   br = branch
