@@ -57,6 +57,7 @@ alias restart-cisco='reset-cisco'
 alias spec='be spec --format documentation --color --profile'
 
 alias g='git'
+alias d='git diff'
 
 alias sqlplus='rlwrap sqlplus'
 
