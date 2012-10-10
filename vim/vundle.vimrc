@@ -34,6 +34,7 @@ Bundle 'robbevan/Vagrantfile.vim'
 Bundle 'vim-ruby/vim-ruby'
 
 Bundle 'msanders/snipmate.vim'
+Bundle 'rstacruz/sparkup'
 
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
