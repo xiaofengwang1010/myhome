@@ -500,7 +500,7 @@ current_time_string() {
 
 vi() {
   log_file="$HOME/tmp/vim_startup_time_$(current_time_string).log"
-  /usr/local/bin/vim --startuptime "${log_file}" "$@"
+  mvim --startuptime "${log_file}" "$@"
 }
 
 #########################################################
