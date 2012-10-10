@@ -91,6 +91,11 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
+if has('gui_running')
+  Bundle 'Lokaltog/vim-powerline'
+  let g:Powerline_symbols = 'fancy'
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Following lines are examples
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
