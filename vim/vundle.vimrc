@@ -32,6 +32,7 @@ Bundle 'quentindecock/vim-cucumber-align-pipes'
 Bundle 'robbevan/Vagrantfile.vim'
 
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'bbommarito/vim-slim'
 
 Bundle 'msanders/snipmate.vim'
 Bundle 'rstacruz/sparkup'
