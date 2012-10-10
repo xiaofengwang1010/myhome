@@ -2,7 +2,6 @@
 " https://github.com/gmarik/vimfiles/blob/master/vimrc
 
 " TODO
-" https://github.com/Lokaltog/vim-powerline
 " https://github.com/vim-scripts/DrawIt
 " https://github.com/scrooloose/syntastic
 " https://github.com/carlhuda/janus
