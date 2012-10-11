@@ -116,7 +116,7 @@ set so=1
 
 set ruler
 
-set mouse=a
+" set mouse=a
 set mousehide
 
 set number
