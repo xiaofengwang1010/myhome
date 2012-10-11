@@ -75,3 +75,4 @@ alias resource='source ~/.bashrc'
 alias t='task'
 
 alias please='sudo'
+alias wtf='tail -f /var/log/{dmesg,messages,*{,/*}{log,err}}'
