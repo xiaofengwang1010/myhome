@@ -51,6 +51,7 @@
   recover = reset --hard
   unstage = reset HEAD --
   last = log -1 HEAD
+  g = grep --break --heading --line-number
 
   # Fancy logging.
   #   h = head
@@ -79,3 +80,6 @@
   ignore = dirty
 [submodule "gremlin"]
   ignore = dirty
+[grep]
+  extendRegexp = true
+  lineNumber = true
