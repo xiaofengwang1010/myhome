@@ -35,6 +35,7 @@ Bundle 'robbevan/Vagrantfile.vim'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'bbommarito/vim-slim'
+Bundle 'juvenn/mustache.vim'
 
 Bundle 'msanders/snipmate.vim'
 Bundle 'rstacruz/sparkup'
