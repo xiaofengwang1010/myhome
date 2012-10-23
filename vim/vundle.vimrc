@@ -10,6 +10,8 @@ call vundle#rc()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Your bundles here
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'scrooloose/nerdtree'
+
 Bundle 'mileszs/ack.vim'
 
 Bundle 'Lokaltog/vim-easymotion'
