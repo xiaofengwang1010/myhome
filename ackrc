@@ -2,3 +2,5 @@
 ruby=.rb,.rhtml,.rjs,.rxml,.erb,.rake,.spec,.feature,.task,.rabl
 --type-set
 rabl=.rabl
+--type-set
+yml=.yml
