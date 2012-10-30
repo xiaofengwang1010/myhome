@@ -56,6 +56,7 @@ Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'avakhov/vim-file-line'
 
 Bundle 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_start_level = 4
 
 Bundle 'tComment'
 nnoremap // :TComment<CR>
