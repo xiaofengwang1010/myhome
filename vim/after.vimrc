@@ -123,6 +123,7 @@ set ruler
 set mousehide
 
 set number
+set cursorline
 set showmatch
 set matchtime=2
 
