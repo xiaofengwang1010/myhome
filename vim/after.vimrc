@@ -107,6 +107,9 @@ syntax enable
 filetype plugin indent on
 
 set background=dark
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
 colorscheme solarized
 
 set colorcolumn=81
