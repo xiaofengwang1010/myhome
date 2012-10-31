@@ -215,7 +215,9 @@ nmap <leader>wq :wq<CR>
 nmap <leader>wqa :wqa<CR>
 nmap <leader>u :update<CR>
 imap jj <Esc>
+imap kk <Esc>
 imap jk <Esc>
+imap kj <Esc>
 
 " Make Control-direction switch between windows (like C-W h, etc)
 nmap <silent> <C-k> <C-W><C-k>
