@@ -89,8 +89,8 @@ if [ -f ~/.bashrc_oracle ]; then
     . ~/.bashrc_oracle
 fi
 
-if [ -f ~/.bashrc_iba ]; then
-    . ~/.bashrc_iba
+if [ -f ~/.bashrc_mobi ]; then
+    . ~/.bashrc_mobi
 fi
 
 if [ -f ~/.bashrc_xfun68 ]; then

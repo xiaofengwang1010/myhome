@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+source ~/.mobirc
+
+jira() {
+  open "http://jira/"
+}
+
+card() {
+  open "http://jira/browse/NEWBLUE-${*}"
+}
+
+alias story='card'
+
+mobi() {
+  if [[ $# == 0 ]]
+  then
+    cd $MOBI_ROOT
+  fi
+
+  if [[ $# == 1 ]]
+  then
+    param=${1}
+
+    if [[ "$param" -eq "blue" ]]
+    then
+      cd $MOBI_BLUE_ROOT
+    fi
+
+    echo $param | egrep --text --silent "\d{1,}"
+    is_a_number=$?
+
+    if [[ $is_a_number == 0 ]]
+    then
+      card $param
+    fi
+  fi
+}
+
