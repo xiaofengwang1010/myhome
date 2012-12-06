@@ -37,7 +37,6 @@
   rabort = rebase --abort
   oneline = log --pretty=oneline --since='2 days ago' --abbrev-commit
   onelog = log -p -1 --abbrev-commit
-  l    = log --graph --oneline --abbrev-commit --decorate --all
   l1   = log --graph --oneline --abbrev-commit --decorate --all -1
   l2   = log --graph --oneline --abbrev-commit --decorate --all -2
   l3   = log --graph --oneline --abbrev-commit --decorate --all -3
