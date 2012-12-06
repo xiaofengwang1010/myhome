@@ -82,3 +82,5 @@
 [grep]
   extendRegexp = true
   lineNumber = true
+[push]
+  default = current
