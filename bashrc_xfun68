@@ -512,6 +512,8 @@ vi() {
   mvim --startuptime "${log_file}" "$@"
 }
 
+[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
 #########################################################
 ## rvm, should be always at the end of this file
 #########################################################
