@@ -28,6 +28,8 @@ alias codejam='cd ~/code/codejam'
 
 alias blog='cd ~/code/blog/source/_posts'
 
+alias twtb='cd ~/code/twtb'
+
 alias hi=' history | less +G'
 
 alias vimrc='vim ~/.vimrc'
