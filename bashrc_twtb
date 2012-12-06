@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+alias twtb="cd $HOME/code/twtb"
+

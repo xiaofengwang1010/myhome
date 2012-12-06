@@ -93,6 +93,10 @@ if [ -f ~/.bashrc_mobi ]; then
     . ~/.bashrc_mobi
 fi
 
+if [ -f ~/.bashrc_twtb ]; then
+    . ~/.bashrc_twtb
+fi
+
 if [ -f ~/.bashrc_xfun68 ]; then
     . ~/.bashrc_xfun68
 fi
