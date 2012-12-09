@@ -38,7 +38,7 @@ alias grep='grep -a --color=auto'
 
 alias k9='kill -9'
 
-alias rake='time rake'
+alias trake='time rake'
 alias bi='bundle install'
 alias bu='bundle update'
 alias bl='bundle list'
