@@ -85,9 +85,9 @@ fi
 
 # load my bashrc file
 
-if [ -f ~/.bashrc_oracle ]; then
-    . ~/.bashrc_oracle
-fi
+# if [ -f ~/.bashrc_oracle ]; then
+#     . ~/.bashrc_oracle
+# fi
 
 if [ -f ~/.bashrc_mobi ]; then
     . ~/.bashrc_mobi
