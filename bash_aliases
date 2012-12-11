@@ -36,6 +36,8 @@ alias vimrc='vim ~/.vimrc'
 
 alias grep='grep -a --color=auto'
 
+alias psa='ps aux'
+
 alias k9='kill -9'
 
 alias trake='time rake'
