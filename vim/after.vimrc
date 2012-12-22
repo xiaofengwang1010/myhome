@@ -296,6 +296,16 @@ function! VisualSearch(direction) range
 endfunction
 " "}}}
 
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    exe "normal mz"
+    %s/\s\+$//e
+    exe "normal `z"
+endfunction
+
+nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
+nnoremap <silent> <Leader>w :call TrimWhiteSpace()<CR>
+
 " AutoCommands " {{{
 au BufRead,BufNewFile {Gemfile,Rakefile,Capfile,*.rake,config.ru} set ft=ruby tabstop=2 softtabstop=2 shiftwidth=2 expandtab smarttab
 au BufRead,BufNewFile {*.md,*.mkd,*.markdown}                     set ft=markdown
