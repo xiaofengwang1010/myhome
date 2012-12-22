@@ -154,7 +154,7 @@ set foldopen+=quickfix
 set splitbelow
 set splitright
 
-set list                      " display unprintable characters f12 - switches
+set list                      " display unprintable characters F11 - switches
 set listchars=tab:\ .
 set listchars+=trail:·
 set listchars+=extends:»,precedes:«
