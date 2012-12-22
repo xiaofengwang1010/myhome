@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mkdir -p ~/.tmp_files/myhome
 mkdir -p ~/.tmp_files/vim/{backups,tmp}
 
 git submodule init
@@ -15,7 +16,7 @@ ln_it_to_home()
     new_files="$target_name"
     home_files="$HOME/.${target_name}"
     date_string=$(date +%Y-%m-%d_%H-%M-%S)
-    backup_name="${home_files}.backup.${date_string}"
+    backup_name="$HOME/.tmp_files/myhome/${target_name}.backup.${date_string}"
 
     cp -rf "${home_files}" "${backup_name}" 2>/dev/null
 
