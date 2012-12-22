@@ -1,0 +1,34 @@
+#!/bin/bash
+# Bash completion support for Rake, Ruby Make.
+# From: https://github.com/ai/rake-completion
+
+rake_completion() {
+  bundle --version &>/dev/null
+
+  if [[ $? -eq 0 ]]; then
+    bundle exec rake -s -T 2>/dev/null | egrep '^rake' | cut -d ' ' -f 2 | tee > .rake_tasks~
+  else
+    rake -s -T 2>/dev/null | egrep '^rake' | cut -d ' ' -f 2 | tee > .rake_tasks~
+  fi
+}
+
+alias rake-completion='rake-completion'
+
+update_rake_completion_cached() {
+  recent=`ls -t .rake_tasks~ Rakefile **/*.rake 2> /dev/null | head -n 1`
+  if [[ $recent != '.rake_tasks~' ]]; then
+    rake_completion
+  fi
+}
+
+
+export COMP_WORDBREAKS=${COMP_WORDBREAKS/\:/}
+
+_rakecomplete() {
+  update_rake_completion_cached
+  COMPREPLY=($(compgen -W "`cat .rake_tasks~`" -- ${COMP_WORDS[COMP_CWORD]}))
+  return 0
+}
+
+complete -o default -o nospace -F _rakecomplete rake
+

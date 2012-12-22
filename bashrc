@@ -101,3 +101,9 @@ if [ -f ~/.bashrc_xfun68 ]; then
     . ~/.bashrc_xfun68
 fi
 
+if [ -d ~/.bash_completion.d ]; then
+    for completion_file in `ls ~/.bash_completion.d/`; do
+      . "$HOME/.bash_completion.d/$completion_file"
+    done
+fi
+

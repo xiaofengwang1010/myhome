@@ -403,21 +403,6 @@ EOF
 }
 
 #########################################################
-## Rake autocompletion
-#########################################################
-
-update-rake-completion() {
-  rake -s -T 2>/dev/null | cut -d ' ' -f 2 > .rake.completion
-}
-
-_rakecomplete() {
-  COMPREPLY=($(compgen -W "`cat .rake.completion`" -- ${COMP_WORDS[COMP_CWORD]}))
-  return 0
-}
-
-complete -o default -o nospace -F _rakecomplete rake
-
-#########################################################
 ## Homebrew autocompletion
 #########################################################
 
