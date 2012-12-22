@@ -37,3 +37,11 @@ mobi() {
   fi
 }
 
+bluedb() {
+  ssh bluedb
+}
+
+blueapp() {
+  ssh blueapp
+}
+
