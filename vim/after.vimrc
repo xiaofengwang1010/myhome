@@ -166,8 +166,6 @@ if has('gui_running')
 
   if has('mac')
     set antialias
-    set fullscreen
-    set fuoptions=maxvert,maxhorz
   else
     set guifont=Terminus:h16
   end
