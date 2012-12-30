@@ -58,5 +58,7 @@ ln_it_to_home "ackrc"
 
 ln_it_to_home "taskrc"
 
+ln_it_to_home "irbrc"
+
 # setup vim
 vim +BundleInstall +qall
