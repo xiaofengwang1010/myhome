@@ -60,5 +60,7 @@ ln_it_to_home "taskrc"
 
 ln_it_to_home "irbrc"
 
+ln_it_to_home "pryrc"
+
 # setup vim
 vim +BundleInstall +qall
