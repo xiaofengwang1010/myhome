@@ -67,6 +67,10 @@ noremap <leader>o :ZoomWin<CR>
 vnoremap <leader>o <C-C>:ZoomWin<CR>
 inoremap <leader>o <C-O>:ZoomWin<CR>
 
+Bundle 'lucapette/codepath.vim'
+nnoremap <silent> <F4> :NERDTreeToggle `=codepath#path ()`<cr>
+inoremap <silent> <F4> <Esc>:NERDTreeToggle `=codepath#path()`<cr>
+
 Bundle 'gmarik/sudo-gui.vim'
 Bundle 'gmarik/github-search.vim'
 let g:github_search_path_format = '~/code/github_repo/:repo'
