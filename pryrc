@@ -6,8 +6,8 @@ gemset = `rvm current`.strip
 ruby_version = gemset.match('ruby') ? gemset : RUBY_VERSION
 
 Pry.prompt = [
-  proc { |obj, nest_level, _| "#{ruby_version} (#{obj}):#{nest_level} > " },
-  proc { |obj, nest_level, _| "#{ruby_version} (#{obj}):#{nest_level} * " }]
+  proc { |obj, nest_level, _| "#{ruby_version} (#{Pry.view_clip(obj)}):#{nest_level} > " },
+  proc { |obj, nest_level, _| "#{ruby_version} (#{Pry.view_clip(obj)}):#{nest_level} * " }]
 
 # Toys methods
 # Stealed from https://gist.github.com/807492
