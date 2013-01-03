@@ -15,7 +15,7 @@ rake_completion() {
 alias rake-completion='rake-completion'
 
 update_rake_completion_cached() {
-  recent=`ls -t .rake_tasks~ Rakefile **/*.rake 2> /dev/null | head -n 1`
+  local recent=`ls -t .rake_tasks~ Rakefile lib/**/*.rake 2> /dev/null | head -n 1`
   if [[ $recent != '.rake_tasks~' ]]; then
     rake_completion
   fi
