@@ -1,0 +1,12 @@
+#!/bin/bash
+
+complete -F get_showoff_commands showoff
+
+function get_showoff_commands() {
+    if [ -z $2 ] ; then
+        COMPREPLY=(`showoff help -c`)
+    else
+        COMPREPLY=(`showoff help -c $2`)
+    fi
+}
+
