@@ -352,7 +352,7 @@ export RUBYOPT="-Ku"
 rvmrc()
 {
   echo 'rvm_install_on_use_flag=1' > .rvmrc
-  echo "rvm --create use ruby-1.9.3-p194@${1:-`basename $(pwd)`}" >> .rvmrc
+  echo "rvm --create use ruby-1.9.3-p327@${1:-`basename $(pwd)`}" >> .rvmrc
   cat .rvmrc 1>&2
   recd
 }
@@ -478,6 +478,38 @@ open() {
   else
     /usr/bin/open "${1}"
   fi
+}
+
+connect_vpn() {
+  vpn_name=${1:-non_existed_vpn}
+
+  osascript -e "
+    tell application \"System Events\"
+        tell current location of network preferences
+            set VPNservice to service \"$vpn_name\"
+            set isConnected to connected of current configuration of VPNservice
+            if not isConnected then
+                connect VPNservice
+            end if
+        end tell
+    end tell
+  "
+}
+
+disconnect_vpn() {
+  vpn_name=${1:-non_existed_vpn}
+
+  osascript -e "
+    tell application \"System Events\"
+        tell current location of network preferences
+            set VPNservice to service \"$vpn_name\"
+            set isConnected to connected of current configuration of VPNservice
+            if isConnected then
+                disconnect VPNservice
+            end if
+        end tell
+    end tell
+  "
 }
 
 #########################################################
