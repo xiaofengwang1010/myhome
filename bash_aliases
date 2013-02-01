@@ -38,6 +38,10 @@ alias grep='grep -a --color=auto'
 
 alias psa='ps aux'
 
+psg() {
+  ps aux | egrep $@
+}
+
 alias k9='kill -9'
 
 alias trake='time rake'
@@ -77,7 +81,11 @@ alias Downloads='cd ~/Downloads/'
 
 alias resource='source ~/.bashrc'
 
+alias json_prettify='python -mjson.tool'
+
 alias t='task'
+
+alias refresh_dns='sudo killall -HUP mDNSResponder'
 
 alias please='sudo'
 alias wtf='tail -f /var/log/{dmesg,messages,*{,/*}{log,err}}'
