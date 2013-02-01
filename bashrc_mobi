@@ -2,46 +2,55 @@
 
 source ~/.mobirc
 
-jira() {
-  open "http://jira/"
-}
-
 card() {
-  open "http://jira/browse/NEWBLUE-${*}"
+  open "http://it-com:8080/browse/NEWBLUE-${*}"
 }
 
 alias story='card'
 
 mobi() {
-  if [[ $# == 0 ]]
+  if [[ $# -eq 0 ]]
   then
     cd $MOBI_ROOT
   fi
 
-  if [[ $# == 1 ]]
+  if [[ $# -eq 1 ]]
   then
     param=${1}
 
-    if [[ "$param" -eq "blue" ]]
+    if [[ "$param" == "blue" ]]
     then
       cd $MOBI_BLUE_ROOT
+    fi
+
+    if [[ "$param" == "jira" ]]
+    then
+      open 'http://it-com:8080/secure/RapidBoard.jspa?rapidView=39'
     fi
 
     echo $param | egrep --text --silent "\d{1,}"
     is_a_number=$?
 
-    if [[ $is_a_number == 0 ]]
+    if [[ $is_a_number -eq 0 ]]
     then
-      card $param
+      story $param
     fi
   fi
 }
 
-bluedb() {
+prep-db() {
   ssh bluedb
 }
 
-blueapp() {
+prep-app() {
   ssh blueapp
+}
+
+db() {
+  mysql -uroot --database=blue
+}
+
+ci() {
+  open 'http://10.29.2.119:8080/'
 }
 
