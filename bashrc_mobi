@@ -54,3 +54,7 @@ ci() {
   open 'http://10.29.2.119:8080/'
 }
 
+insert_migrations() {
+  ls db/migrate/ | cut -d'_' -f1 | awk '{ printf "(%s),", $0; }' | sed 's/^\(.*\).$/insert into blue.schema_migrations values \1;/g' | pbcopy
+}
+
