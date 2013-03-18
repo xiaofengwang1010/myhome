@@ -99,6 +99,9 @@ set indentkeys-=0#            " do not break indent on #
 set cinkeys-=0#
 set cinoptions=:s,ps,ts,cs
 set cinwords=if,else,while,do,for,switch,case
+
+map <silent> <F5> mmgg=G'm
+imap <silent> <F5> <Esc> mmgg=G'm
 " "}}}
 
 " Visual "{{{
