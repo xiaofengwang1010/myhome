@@ -188,10 +188,6 @@ vnoremap <leader>c "dymz"dP`z
 nnoremap <silent> <LocalLeader>so :source ~/.vimrc<CR>
 nnoremap <silent> <LocalLeader>rc :edit   ~/.vimrc<CR>
 
-" Tabs (not working on Mac)
-"nnoremap <C-H> :bp<CR>
-"nnoremap <C-L> :tabnext<CR>
-
 " Change shiftwidth locally
 map <leader>t2 :setlocal shiftwidth=2<cr>
 map <leader>t4 :setlocal shiftwidth=4<cr>
