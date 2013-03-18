@@ -313,7 +313,7 @@ dot2svg()
         return 1;
     fi
 
-    filename=$1; vi "$filename"; dot -Tsvg "$filename" -O && eog "$filename.svg"
+    filename=$1; dot -Tsvg "$filename" -O && open "$filename.svg"
 }
 
 dot2png()
@@ -322,7 +322,7 @@ dot2png()
         return 1;
     fi
 
-    filename=$1; vi "$filename"; dot -Tpng "$filename" -O && open "$filename.png"
+    filename=$1; dot -Tpng "$filename" -O && open "$filename.png"
 }
 
 neato2png()
@@ -340,7 +340,7 @@ fdp2svg()
         return 1;
     fi
 
-    filename=$1; vi "$filename"; fdp -Tsvg "$filename" -O && eog "$filename.svg"
+    filename=$1; fdp -Tsvg "$filename" -O && open "$filename.svg"
 }
 
 #########################################################
