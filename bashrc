@@ -89,9 +89,9 @@ fi
 #     . ~/.bashrc_oracle
 # fi
 
-if [ -f ~/.bashrc_mobi ]; then
-    . ~/.bashrc_mobi
-fi
+# if [ -f ~/.bashrc_mobi ]; then
+#     . ~/.bashrc_mobi
+# fi
 
 if [ -f ~/.bashrc_twtb ]; then
     . ~/.bashrc_twtb
