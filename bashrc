@@ -97,6 +97,11 @@ if [ -f ~/.bashrc_twtb ]; then
     . ~/.bashrc_twtb
 fi
 
+HERMES_VERBOSE=1
+if [ -f ~/.hermes.go ]; then
+    . ~/.hermes.go
+fi
+
 if [ -f ~/.bashrc_xfun68 ]; then
     . ~/.bashrc_xfun68
 fi
