@@ -364,6 +364,7 @@ gemfile()
   cat 1>&2 <<-EOF
 Hints:
   -= Gem Sources =-
+  source 'http://ruby.taobao.org/'
   source :rubygems
   source "http://rubygems.org"
   source :rubyforge
