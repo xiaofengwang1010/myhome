@@ -63,9 +63,7 @@ nnoremap // :TComment<CR>
 vnoremap // :TComment<CR>
 
 Bundle 'vim-scripts/ZoomWin'
-noremap <leader>o :ZoomWin<CR>
-vnoremap <leader>o <C-C>:ZoomWin<CR>
-inoremap <leader>o <C-O>:ZoomWin<CR>
+command Z ZoomWin
 
 Bundle 'lucapette/codepath.vim'
 nnoremap <silent> <F4> :NERDTreeToggle `=codepath#path ()`<cr>
