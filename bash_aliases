@@ -50,7 +50,9 @@ alias bu='bundle update'
 alias bl='bundle list'
 alias be='bundle exec'
 alias tbe='time bundle exec'
-alias br='be rspec --format documentation --color --profile'
+br() {
+  be rspec --format documentation --color --profile $*
+}
 alias bs='be spinach'
 alias spinach='bs'
 alias cuke='be cucumber '
