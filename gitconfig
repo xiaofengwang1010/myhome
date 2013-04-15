@@ -28,6 +28,7 @@
   dif= diff
   ds = diff --stat
   dc = diff --cached
+  fa = fetch --all
   pr = pull --rebase
   ps = push
   rc = rebase --continue
