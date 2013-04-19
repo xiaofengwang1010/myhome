@@ -21,6 +21,8 @@ Bundle 'sjl/gundo.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/peaksea'
 
+Bundle 'jelera/vim-javascript-syntax'
+
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
