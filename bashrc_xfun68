@@ -83,10 +83,10 @@ BASH_NEWLINE="\n"
 [ -f ~/.bashrc_git ] && . ~/.bashrc_git
 
 export PS1="\n\
-${Bash_UGreen}\d \t \u${Bash_Color_Off}\n\
+${Bash_Green}\d \t \u${Bash_Color_Off}\n\
 \w\n\
-${Bash_Cyan}$(__git_ps1)${Bash_Color_Off} \
-${Bash_Yellow}[$(~/.rvm/bin/rvm-prompt)]${Bash_Color_Off}\n\
+${Bash_Cyan}\$(__git_ps1)${Bash_Color_Off} \
+${Bash_Yellow}[\$(~/.rvm/bin/rvm-prompt)]${Bash_Color_Off}\n\
 \$ "
 
 export EDITOR=/usr/bin/vim
