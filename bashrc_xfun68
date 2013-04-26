@@ -82,7 +82,12 @@ BASH_NEWLINE="\n"
 
 [ -f ~/.bashrc_git ] && . ~/.bashrc_git
 
-export PS1='\n\[\e[0;92m\]\d \t \u\n\w\n\[\e[0;33m\]$(__git_ps1) [$(~/.rvm/bin/rvm-prompt)]\n\[\e[0;92m\]\$\[\e[0m\] '
+export PS1="\n\
+${Bash_UGreen}\d \t \u${Bash_Color_Off}\n\
+\w\n\
+${Bash_Cyan}$(__git_ps1)${Bash_Color_Off} \
+${Bash_Yellow}[$(~/.rvm/bin/rvm-prompt)]${Bash_Color_Off}\n\
+\$ "
 
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
