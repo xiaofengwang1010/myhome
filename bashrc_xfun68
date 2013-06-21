@@ -522,9 +522,7 @@ disconnect_vpn() {
 ## Autojump
 #########################################################
 
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
-fi
+[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 #########################################################
 ## Current Time String
@@ -539,8 +537,6 @@ vi() {
   log_file="$HOME/tmp/vim_startup_time_$(current_time_string).log"
   mvim --startuptime "${log_file}" "$@"
 }
-
-[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 #########################################################
 ## rvm, should be always at the end of this file
