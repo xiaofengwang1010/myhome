@@ -32,6 +32,7 @@ Bundle 'scrooloose/nerdcommenter'
 
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/Align'
+Bundle 'vim-scripts/a.vim'
 
 Bundle 'quentindecock/vim-cucumber-align-pipes'
 
