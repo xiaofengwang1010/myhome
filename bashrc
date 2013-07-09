@@ -93,13 +93,17 @@ fi
 #     . ~/.bashrc_mobi
 # fi
 
-if [ -f ~/.bashrc_twtb ]; then
-    . ~/.bashrc_twtb
-fi
+# if [ -f ~/.bashrc_twtb ]; then
+#     . ~/.bashrc_twtb
+# fi
 
-HERMES_VERBOSE=1
-if [ -f ~/.hermes.go ]; then
-    . ~/.hermes.go
+# HERMES_VERBOSE=1
+# if [ -f ~/.hermes.go ]; then
+#     . ~/.hermes.go
+# fi
+
+if [ -f ~/.bashrc_android ]; then
+    . ~/.bashrc_android
 fi
 
 if [ -f ~/.bashrc_xfun68 ]; then
