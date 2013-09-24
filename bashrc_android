@@ -1,3 +1,4 @@
-export PATH="/Applications/Android Studio.app/sdk/tools:$PATH"
-export PATH="/Applications/Android Studio.app/sdk/platform-tools:$PATH"
+export PATH="$HOME/adt-bundle-mac-x86_64-20130522/sdk/tools:$PATH"
+export PATH="$HOME/adt-bundle-mac-x86_64-20130522/sdk/build-tools:$PATH"
+export PATH="$HOME/adt-bundle-mac-x86_64-20130522/sdk/platform-tools:$PATH"
 
