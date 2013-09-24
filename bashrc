@@ -106,6 +106,10 @@ if [ -f ~/.bashrc_android ]; then
     . ~/.bashrc_android
 fi
 
+if [ -f ~/.bashrc_eslpod ]; then
+    . ~/.bashrc_eslpod
+fi
+
 if [ -f ~/.bashrc_xfun68 ]; then
     . ~/.bashrc_xfun68
 fi

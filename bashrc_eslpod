@@ -1,0 +1,44 @@
+#!/usr/bin/env sh
+
+function download_all_podcasts()
+{
+  local first_podcast_number=100
+  local last_podcast_number=$(latest_podcast_number)
+
+  for (( number=$first_podcast_number; number <= $last_podcast_number; number++ ))
+  do
+    [ -f $(filename_of_podcast $number) ] || download_podcast $number
+  done
+}
+
+function latest_podcast_number()
+{
+  local eslpod_homepage='http://www.eslpod.com/website/index_new.html'
+  local podcast_number_pattern='\d{2,}'
+  local podcast_name_pattern="ESLPod${podcast_number_pattern}.mp3"
+  local podcast_url_pattern="http://libsyn.com/media/eslpod/${podcast_name_pattern}"
+
+  curl --silent $eslpod_homepage | egrep -o $podcast_url_pattern | head -n1 | egrep -o $podcast_name_pattern | egrep -o $podcast_number_pattern
+}
+
+function download_podcast()
+{
+  local podcast_number="$1"
+  local download_folder="$HOME/Downloads/eslpod"
+  local download_url=$(download_url_of_podcast ${podcast_number})
+  (mkdir -p $download_folder && cd $download_folder && wget $download_url && cd -)
+}
+
+function download_url_of_podcast()
+{
+  local podcast_number="$1"
+  local podcast_name="$(filename_of_podcast ${podcast_number})"
+  echo "http://libsyn.com/media/eslpod/${podcast_name}"
+}
+
+function filename_of_podcast()
+{
+  local podcast_number="$1"
+  echo "ESLPod${podcast_number}.mp3"
+}
+
