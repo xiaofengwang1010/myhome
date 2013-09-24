@@ -37,6 +37,7 @@ ln_it_to_home "bashrc_iba"
 ln_it_to_home "mobirc"
 ln_it_to_home "bashrc_android"
 ln_it_to_home "bashrc_mobi"
+ln_it_to_home "bashrc_eslpod"
 ln_it_to_home "bashrc_xfun68"
 ln_it_to_home "bash_completion.d"
 
