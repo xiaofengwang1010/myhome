@@ -1,13 +1,15 @@
 #!/usr/bin/env sh
 
-function download_all_podcasts()
+esl_download_folder="$HOME/Downloads/eslpod"
+
+function download_all_esl_podcasts()
 {
   local first_podcast_number=100
   local last_podcast_number=$(latest_podcast_number)
 
   for (( number=$first_podcast_number; number <= $last_podcast_number; number++ ))
   do
-    [ -f $(filename_of_podcast $number) ] || download_podcast $number
+    [ -f $esl_download_folder/$(filename_of_podcast $number) ] || download_podcast $number
   done
 }
 
@@ -24,9 +26,8 @@ function latest_podcast_number()
 function download_podcast()
 {
   local podcast_number="$1"
-  local download_folder="$HOME/Downloads/eslpod"
   local download_url=$(download_url_of_podcast ${podcast_number})
-  (mkdir -p $download_folder && cd $download_folder && wget $download_url && cd -)
+  (mkdir -p $esl_download_folder && cd $esl_download_folder && wget $download_url && cd -)
 }
 
 function download_url_of_podcast()
