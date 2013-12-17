@@ -450,6 +450,18 @@ EOF
 }
 
 #########################################################
+## Display disk usage under specific folders
+#########################################################
+
+folder-size()
+{
+  local root_folder="${1:-.}"
+  local max_depth="${2:-1}"
+
+  find "${root_folder}" -type d -maxdepth ${max_depth} -mindepth 1 -exec sudo du -sh -m {} \;
+}
+
+#########################################################
 ## ABS
 #########################################################
 
