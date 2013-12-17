@@ -36,6 +36,8 @@ alias vimrc='vim ~/.vimrc'
 
 alias grep='grep -a --color=auto'
 
+alias topcpu='top -o cpu'
+
 alias psa='ps aux'
 
 psg() {
